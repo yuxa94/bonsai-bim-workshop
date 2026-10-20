@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-21",
+  "unit": {
+    "kind": "unit",
+    "ifc_unchanged": true,
+    "source_file_hash_unchanged": true,
+    "panel_registered": true,
+    "comparison_and_restore_passed": true,
+    "single_storey": true
+  },
+  "floor": {
+    "kind": "floor",
+    "ifc_unchanged": true,
+    "source_file_hash_unchanged": true,
+    "panel_registered": true,
+    "comparison_and_restore_passed": true,
+    "single_storey": true
+  },
+  "zip_crc": "passed",
+  "zip_sha256": "faf2278b926e31ca90aebaa4faa9c149fe8659b2662b5cfce0e226c99ea7fa4a",
+  "new_pdf_pages_visually_reviewed": [
+    14,
+    15,
+    33,
+    34
+  ],
+  "original_ifc_cad_and_live_sessions_modified": false
+}

@@ -2,12 +2,12 @@
   "date": "2026-10-21",
   "course_minutes": 240,
   "break_minutes": 20,
-  "slides": 44,
+  "slides": 48,
   "unit_models": 18,
   "floor_models": 33,
   "ifc_blend_pairs_verified": 51,
-  "max_file_bytes": 5749289,
-  "payload_bytes": 371303440,
+  "max_file_bytes": 16807822,
+  "payload_bytes": 407808707,
   "asset_hashes_checked": 51,
   "missing_links": [],
   "private_path_scan_files": [],
@@ -16,27 +16,11 @@
   "source_thread": "Blender에서 3D 모델 만들기",
   "source_floor_dwg_sha256": "4b1c2d0df4367606cc0dc498946bb0e90dbb07af41267763663aa7898c5b8511",
   "area_tests": 5,
-  "browser_ui": {
-    "public_page_loaded": true,
-    "slide_navigation": true,
-    "toc_search": true,
-    "instructor_notes": true,
-    "checkbox_persistence": true,
-    "reading_mode_slides": 44,
-    "loaded_broken_images": 0,
-    "horizontal_overflow": false,
-    "desktop_prompt_page_height": 720,
-    "desktop_viewport_height": 720,
-    "copy_button_success_state": true,
-    "filename_search_A32_05_visible_results": 1,
-    "clipboard_note": "CUA virtual clipboard is separate from navigator.clipboard; OS paste not independently checked."
-  },
-  "pdf_pages_reviewed": 44,
+  "browser_ui": "Pending public-page verification",
+  "pdf_pages_reviewed": "Pending final render check",
   "limitations": [
     "Blender snapshots are for display; adjacent IFC is authoritative",
     "Student setup and LLM modelling time varies",
     "Fresh dependency installation and native Excel recalculation not tested"
-  ],
-  "source_floor_matches_original_thread_export": true,
-  "public_download_hashes_verified": 9
+  ]
 }

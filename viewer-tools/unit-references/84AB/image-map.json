@@ -1,0 +1,29 @@
+{
+  "label": "84AB",
+  "bim_origin_mm": [
+    3695.668641062687,
+    3725.535263190185
+  ],
+  "wcs_bounds_mm": [
+    -1500.0,
+    0.0,
+    17250.0,
+    18750.0
+  ],
+  "view_target_m": [
+    4.17,
+    5.61,
+    1.0
+  ],
+  "view_distance_m": 18,
+  "units": "mm",
+  "rotation_deg": 0,
+  "pixel_size": [
+    4320,
+    4320
+  ],
+  "mm_per_pixel": 4.340277777777778,
+  "entity_count": 3903,
+  "dimension_count": 87,
+  "source": "source-reference.dxf"
+}

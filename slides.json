@@ -439,6 +439,80 @@
     "note": "제공 이미지가 학생의 실행 성공을 증명하지는 않는다. 원본과 다른 점 3개를 찾아 다음 수정 요청으로 연결한다."
   },
   {
+    "part": "03 · 원본 대조 뷰어",
+    "time": "50–55분",
+    "title": "N 패널에서 원본 도면과 겹쳐 봅니다",
+    "lead": "단위세대용 CAD Overlay의 실제 사용법입니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "준비",
+        "뷰어 ZIP을 풀고 CAD Overlay Tools를 설치·활성화합니다."
+      ],
+      [
+        "매핑",
+        "N → CAD Overlay → 도면 매핑에서 해당 유닛 image-map.json을 선택합니다."
+      ],
+      [
+        "대조",
+        "평면 대조·입체 대조, 3D 불투명도와 바닥 표시를 조절합니다."
+      ],
+      [
+        "복원",
+        "일반 모델 보기로 돌아옵니다. IFC 형상·재료는 유지합니다."
+      ]
+    ],
+    "images": [
+      {
+        "path": "images/25B-overlay.png",
+        "caption": "실제 Blender:25B 원본 도면과 IFC를 함께 표시"
+      }
+    ],
+    "links": [
+      {
+        "name": "뷰어 설치·사용 안내",
+        "path": "guides/05-original-drawing-viewer.md"
+      },
+      {
+        "name": "코드·원본·매핑 ZIP",
+        "path": "viewer-tools.zip"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "기존25B·54B에서사용한CAD Overlay Tools1.1.0이다. 다른도면에25B기본참조를자동적용하지않고해당매핑을선택한다. 새독립실습시간을늘리지않고50–55분원본검토에서시연한다."
+  },
+  {
+    "part": "03 · 원본 대조 뷰어",
+    "time": "50–55분",
+    "title": "3C · 뷰어로 위치를 대조합니다",
+    "lead": "정합 좌표로 확인하고 화면에 맞춰 임의 이동하지 않습니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "아래 뷰어 묶음을 다운로드하고 안내를 읽어줘.\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/viewer-tools.zip\n현재25B IFC를 유지하고 CAD Overlay Tools를 설치·활성화해줘. 도면 매핑에 unit-references/25B/image-map.json을 지정해 평면 대조와 입체 대조를 켜줘.\n불투명도와 바닥 표시를 바꿔 벽·문·창·가구 위치를 확인하고 일반 모델 보기로 복원해줘. 표시 전후 IFC 내용·파일 해시가 같은지 확인해줘.",
+    "terms": [
+      [
+        "도면 매핑",
+        "원본 WCS 범위·BIM 원점·이미지를 연결합니다."
+      ],
+      [
+        "표시 전용",
+        "뷰어 투명도는 IFC 재료 투명도와 다릅니다."
+      ]
+    ],
+    "checks": [
+      "해당 유닛의 원본 도면이 보인다.",
+      "평면·입체·불투명도를 조절했다.",
+      "복원 후 IFC 내용·해시가 같다."
+    ],
+    "repair": "도면을 못 찾거나 위치가 달라. 선택한 image-map.json 옆의 original-plan.png와 단위·원점이 현재 유닛에 맞는지 확인해줘.",
+    "note": "25B약2.78mm/픽셀. 정밀치수는DWG/DXF를확인한다. 기존세션의다른IFC를교체하지않는다."
+  },
+  {
     "part": "04 · 상세를 잡아가기",
     "time": "55–62분",
     "title": "창틀 두 열과 유리의 수를 봅니다",
@@ -934,6 +1008,76 @@
     "checks": [],
     "repair": "",
     "note": "화면 캡처와 IFC 메시 투영 이미지를 구분해 표시한다. 전체 동을 내려받지 않고 한 층으로 검토한다."
+  },
+  {
+    "part": "10 · 층별 원본 대조",
+    "time": "170–175분",
+    "title": "A32는 층별 검토 패널을 사용합니다",
+    "lead": "개별 층 IFC에서도 원본 도면과 비교할 수 있습니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "등록",
+        "A32-05.ifc를 연 뒤 enable-a32-viewer.py를 실행합니다."
+      ],
+      [
+        "선택",
+        "N → 층별 검토에서 현재 IFC에 있는 층을 선택합니다."
+      ],
+      [
+        "대조",
+        "층 평면·층 3D·겹쳐 비교·원본만 보기를 전환합니다."
+      ],
+      [
+        "조절·복원",
+        "모델 불투명도·바닥·공간 표시를 바꾸고 이전 표시로 복원합니다."
+      ]
+    ],
+    "images": [
+      {
+        "path": "images/05-overlay.png",
+        "caption": "실제 Blender:층별 검토 패널과 A32 5층 원본 대조"
+      }
+    ],
+    "links": [
+      {
+        "name": "A32 포함 뷰어 ZIP",
+        "path": "viewer-tools.zip"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "33개층목록은전체층을자동로드하지않는다.5~23층공통원본을포함해15종참조가있다. 원래버튼명전체동·이전표시복원은현재파일의검토전표시복원이다. 개별층학습방식을유지한다."
+  },
+  {
+    "part": "10 · 층별 원본 대조",
+    "time": "170–175분",
+    "title": "9C · 기준층의 불일치를 찾습니다",
+    "lead": "뷰어로 발견한 문제를 다음 상세 수정 요청으로 넘깁니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "아래 뷰어 안내와 ZIP을 사용해줘.\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/viewer-tools/README.md\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/viewer-tools.zip\n현재 열려 있는 A32 단일층 IFC의 경로와 층을 확인하고 enable-a32-viewer.py를 실행해 층별 검토 패널을 등록해줘. 현재 파일에 있는 층만 선택하고 원본 도면+모델 겹쳐 비교, 원본만 보기, 층 평면·3D를 확인해줘.\n원점·층 표고를 유지한 채 불투명도와 바닥·공간 표시를 조절해 차이3개를 기록하고 이전 표시로 복원해줘. IFC 내용·해시도 보존해줘.",
+    "terms": [
+      [
+        "현재 층만",
+        "다른 층은 그 IFC를 별도로 열어 검토합니다."
+      ],
+      [
+        "차이 기록",
+        "문·창·계단·샤프트의 수정 근거로 사용합니다."
+      ]
+    ],
+    "checks": [
+      "현재 층과 원본이 정합된다.",
+      "원본만 보기와 겹쳐 보기가 된다.",
+      "차이를 기록하고 표시를 복원했다."
+    ],
+    "repair": "층이 없다는 오류가 나. 현재 IFC의 IfcBuildingStorey와 A32Storey.FloorId를 읽고 실제 존재하는 층을 선택해줘.",
+    "note": "A32참조는약14.44mm/픽셀이다. 래스터겹침은시각검토이며전체차이자동판정이나정밀치수검사완료를뜻하지않는다."
   },
   {
     "part": "10 · 기준층 상세 수정",

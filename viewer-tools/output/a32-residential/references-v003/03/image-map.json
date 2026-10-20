@@ -1,0 +1,27 @@
+{
+  "label": "A32 03",
+  "wcs_bounds_mm": [
+    685000,
+    9500,
+    737000,
+    61500
+  ],
+  "bim_origin_mm": [
+    690000,
+    14000
+  ],
+  "pixel_size": [
+    3600,
+    3600
+  ],
+  "mm_per_pixel": 14.444444444444445,
+  "source": "plans.dxf",
+  "source_sha256": "170bebafffd19e4c7ef21a78e272f75fa4d20a4952d716f66fcd7091c290b000",
+  "render": "ezdxf Frontend; original modelspace, text and dimensions, source XCLIP",
+  "view_target_m": [
+    21,
+    18,
+    0
+  ],
+  "view_distance_m": 60
+}

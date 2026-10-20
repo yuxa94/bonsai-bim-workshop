@@ -1,0 +1,31 @@
+{
+  "label": "65B",
+  "bim_origin_mm": [
+    48202.76924822434,
+    4305.263279601777
+  ],
+  "wcs_bounds_mm": [
+    46500.0,
+    2300.0,
+    59000.0,
+    14800.0
+  ],
+  "view_target_m": [
+    4.17,
+    4.35,
+    0.8
+  ],
+  "view_distance_m": 15,
+  "cad_rotation_deg": 0,
+  "cad_units": "mm",
+  "ifc_units": "m",
+  "origin_basis": "Native A-CON outer southwest endpoint14B",
+  "pixel_size": [
+    4320,
+    4320
+  ],
+  "mm_per_pixel": 2.8935185185185186,
+  "entity_count": 3635,
+  "dimension_count": 65,
+  "source": "source-reference.dxf"
+}

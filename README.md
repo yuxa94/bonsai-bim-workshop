@@ -7,6 +7,7 @@ Blender 다운로드 완료 상태에서 MCP 연결, Bonsai·IfcOpenShell 설치
 - [설치 안내](guides/01-connect-and-install.md)
 - [단계별 요청문](prompts.txt)
 - [강사 노트](instructor-notes.md)
+- [원본 도면 대조 뷰어](guides/05-original-drawing-viewer.md) / [뷰어 묶음](viewer-tools.zip)
 - [면적 실습](area-lab/README.md)
 
 필요한 자료만 개별로 받으세요. 유닛18개(독립4개+A32의14배치형)와층33개를 각각IFC·Blender·미리보기 묶음으로 제공합니다. IFC가기준이며.blend는해당IFC의표시스냅샷입니다. 전체동파일은포함하지않습니다.

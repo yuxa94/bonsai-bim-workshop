@@ -1,0 +1,21 @@
+{
+  "source": "source-reference.dxf",
+  "wcs_bounds_mm": [
+    42000.0,
+    21900.0,
+    53800.0,
+    37500.0
+  ],
+  "bim_origin_mm": [
+    46120.87044137,
+    25803.5629119025
+  ],
+  "scale": "1 CAD mm = .001 Blender m",
+  "pixel_size": [
+    4248,
+    5616
+  ],
+  "mm_per_pixel": 2.7777777777777777,
+  "entity_count": 3343,
+  "dimension_count": 55
+}
