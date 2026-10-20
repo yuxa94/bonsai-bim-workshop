@@ -16,12 +16,25 @@
   "source_thread": "Blender에서 3D 모델 만들기",
   "source_floor_dwg_sha256": "4b1c2d0df4367606cc0dc498946bb0e90dbb07af41267763663aa7898c5b8511",
   "area_tests": 5,
-  "browser_ui": "Pending public-page verification",
+  "browser_ui": {
+    "public_page_loaded": true,
+    "slide_navigation": true,
+    "toc_search": true,
+    "instructor_notes": true,
+    "checkbox_persistence": true,
+    "reading_mode_slides": 44,
+    "loaded_broken_images": 0,
+    "horizontal_overflow": false,
+    "copy_button_success_state": true,
+    "filename_search": "Fix published; browser retest pending",
+    "clipboard_note": "CUA virtual clipboard does not expose navigator.clipboard; system paste not independently checked."
+  },
   "pdf_pages_reviewed": 44,
   "limitations": [
     "Blender snapshots are for display; adjacent IFC is authoritative",
     "Student setup and LLM modelling time varies",
     "Fresh dependency installation and native Excel recalculation not tested"
   ],
-  "source_floor_matches_original_thread_export": true
+  "source_floor_matches_original_thread_export": true,
+  "public_download_hashes_verified": 9
 }
