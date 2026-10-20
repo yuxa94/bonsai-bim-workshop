@@ -802,7 +802,7 @@
     "rows": [],
     "images": [],
     "links": [],
-    "prompt": "아래 카탈로그에서 A32의 6설계타입·14배치형을 조사해줘.\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/materials/catalog.json\n전체 모델 대신 필요한 유닛 IFC 1~2개만 내려받아줘. 세대 파일과 실제 IfcTypeObject·MappedItem을 구분하고 원점·미러·회전·GUID·개구부 관계를 표로 정리해줘.\n새 발생 객체는 새 GUID를 부여하고 반복 형상은 매핑으로 공유할 계획을 세워줘. 원본 보관본은 유지해줘.",
+    "prompt": "아래 카탈로그에서 A32의 6설계타입·14배치형을 조사해줘.\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/materials/catalog.json\n전체 모델 대신 필요한 유닛 IFC 1~2개만 내려받아줘. 세대 파일과 실제 IfcTypeObject·MappedItem을 구분하고 원점·미러·회전·GUID·개구부 관계를 표로 정리해줘.\n실제 파일 경로·원점·회전·미러·타입 관계를 work/reuse-catalog.json에 저장해줘. 반복 형상을 타입·매핑으로 공유한 대표 검토 IFC를 별도 저장하고 기존 GUID·개구부 관계 보존을 검사해줘. 새 발생 객체에는 새 GUID를 부여하고 원본 보관본은 유지해줘.",
     "terms": [
       [
         "14배치형",
@@ -816,7 +816,7 @@
     "checks": [
       "독립 4타입과 A32 목록을 구분했다.",
       "배치형·GUID·매핑을 확인했다.",
-      "필요한 파일만 열었다."
+      "재사용 JSON과 대표 IFC를 저장했다."
     ],
     "repair": "같은 평형이라며 미러 유닛을 합쳤어. 카탈로그의 배치형과 실제 현관·외벽 조건을 다시 확인하고 분리해줘.",
     "note": "15분 동안 한 타입의 두 배치형을 비교한다. 14개를 모두 동시에 로드하지 않는다."

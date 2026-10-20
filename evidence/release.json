@@ -7,7 +7,7 @@
   "floor_models": 33,
   "ifc_blend_pairs_verified": 51,
   "max_file_bytes": 5749289,
-  "payload_bytes": 371216712,
+  "payload_bytes": 371303440,
   "asset_hashes_checked": 51,
   "missing_links": [],
   "private_path_scan_files": [],
@@ -25,9 +25,11 @@
     "reading_mode_slides": 44,
     "loaded_broken_images": 0,
     "horizontal_overflow": false,
+    "desktop_prompt_page_height": 720,
+    "desktop_viewport_height": 720,
     "copy_button_success_state": true,
-    "filename_search": "Fix published; browser retest pending",
-    "clipboard_note": "CUA virtual clipboard does not expose navigator.clipboard; system paste not independently checked."
+    "filename_search_A32_05_visible_results": 1,
+    "clipboard_note": "CUA virtual clipboard is separate from navigator.clipboard; OS paste not independently checked."
   },
   "pdf_pages_reviewed": 44,
   "limitations": [
