@@ -16,7 +16,7 @@
   "source_thread": "Blender에서 3D 모델 만들기",
   "source_floor_dwg_sha256": "4b1c2d0df4367606cc0dc498946bb0e90dbb07af41267763663aa7898c5b8511",
   "area_tests": 5,
-  "browser_ui": "Previous 44-slide release verified; added viewer slides awaiting published-page check",
+  "browser_ui": "Published viewer slides 14,33,34 verified at commit 338d2c9; 48-slide count, viewer links, prompt content, no broken loaded images or horizontal overflow. Previous 44-slide interactions verified in prior release.",
   "pdf_pages_reviewed": "48 pages: previous 44 reviewed; new pages 14,15,33,34 rendered and visually reviewed",
   "limitations": [
     "Blender snapshots are for display; adjacent IFC is authoritative",

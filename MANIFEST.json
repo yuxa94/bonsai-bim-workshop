@@ -163,8 +163,8 @@
     },
     {
       "path": "evidence/release.json",
-      "bytes": 1116,
-      "sha256": "e168eecdfc1f36887407ff549719c866f2fc9297dc1c4b3ad4692c416ae40288"
+      "bytes": 1243,
+      "sha256": "a1e4fdf5109716454b11b3a8ddfd9b901bfb4568a7ca5be990a1044bef68f254"
     },
     {
       "path": "evidence/viewer-verification.json",
