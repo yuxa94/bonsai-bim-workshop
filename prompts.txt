@@ -1,4 +1,15 @@
-5. 01 · Blender MCP 연결 · 1A · 지금 열린 Blender를 확인합니다
+1. 00 · 먼저 복사하세요 · Bonsai·IfcOpenShell 설치를 맡깁니다
+Blender는 다운로드했어. 이 Windows PC에 Bonsai와 IfcOpenShell을 실제 설치하고 확인해줘.
+설치 안내: https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/guides/01-connect-and-install.md
+Blender 실행 파일·버전·내부 Python·기존 설치를 확인하고 공식 배포처의 호환 Bonsai 안정판을 설치·활성화해줘. 정상 설치와 기존 모델·다른 창은 보존해줘.
+Bonsai 포함 IfcOpenShell의 Blender 내부 import를 확인하고, 면적산출용 별도 Python 가상환경에도 ifcopenshell을 설치해줘.
+MCP 미연결이면 터미널 작업부터 진행해줘. 안내만 하지 말고 가능한 설치를 끝내고 필요한 승인·클릭·재시작만 알려줘.
+다운로드 시작을 알리고 실제 결과·버전·경로·남은 단계를 work/setup-check.md에 기록해줘.
+
+안 되면
+설치가 멈췄어. 실패 명령과 원문 오류, Blender·Python 버전, 다운로드·설치·활성화 중 막힌 단계를 확인해서 이어서 처리해줘.
+
+6. 01 · Blender MCP 연결 · 1A · 지금 열린 Blender를 확인합니다
 Blender MCP 연결을 확인해줘.
 실행 중인 Blender 버전, 현재 파일 경로와 장면 이름, 객체 수를 읽어줘.
 앞으로 사용할 창이 맞는지 확인하고 현재 장면은 수정하지 마.
@@ -6,7 +17,7 @@ Blender MCP 연결을 확인해줘.
 안 되면
 Blender MCP가 응답하지 않아. 애드온 활성화, 패널의 서버 시작 상태, Codex MCP 실행 명령과 포트 충돌을 순서대로 확인해줘.
 
-9. 02 · 설치 확인 · 2A · Bonsai와 IfcOpenShell을 확인합니다
+10. 02 · 설치 확인 · 2A · Bonsai와 IfcOpenShell을 확인합니다
 현재 Blender에 Bonsai가 설치·활성화됐는지 확인해줘.
 Blender 안의 Python에서 bpy, bonsai, ifcopenshell을 불러오고 각 버전과 모듈 경로를 알려줘.
 외부 Python의 설치 상태와 구분해서 보고하고 빈 IFC 프로젝트를 만들 준비만 확인해줘.
@@ -14,7 +25,7 @@ Blender 안의 Python에서 bpy, bonsai, ifcopenshell을 불러오고 각 버전
 안 되면
 외부 Python에서는 되는데 Blender에서 ifcopenshell을 못 찾아. Blender 내부 sys.executable과 확장 경로를 확인하고 공식 Bonsai 호환 설치부터 고쳐줘.
 
-11. 03 · 첫 단위세대 · 3A · 바로 만들기 전에 도면을 읽습니다
+12. 03 · 첫 단위세대 · 3A · 바로 만들기 전에 도면을 읽습니다
 아래 DWG를 내 실습 폴더에 다운로드하고 원본을 보존해줘.
 https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/25B-v003.dwg
 DWG를 직접 읽을 수 없는 환경이면 같은 원본의 보조 DXF를 사용해줘.
@@ -24,7 +35,7 @@ https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/25B-re
 안 되면
 파일을 못 읽겠어. DWG 지원 도구가 있는지 확인하고, 없으면 제공 DXF의 실제 엔티티·문자·치수로 조사해줘.
 
-12. 03 · 첫 단위세대 · 3B · 25B를 새 IFC로 만듭니다
+13. 03 · 첫 단위세대 · 3B · 25B를 새 IFC로 만듭니다
 방금 읽은 25B 도면을 기준으로 새 IFC를 만들고 별도 Blender 작업 창에서 열어줘.
 도면의 좌표·회전·FL/SL을 유지하고 벽·슬래브·문·창·공간을 적절한 IFC 클래스로 작성해줘.
 수업용 검토값은 벽 2800mm, 슬래브 200mm, 미표기 창대 900mm로 적용하되 도면에 다른 표기가 있으면 그 표기를 우선하고 충돌을 알려줘.
@@ -33,7 +44,7 @@ https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/25B-re
 안 되면
 형상이 도면에서 멀리 떨어졌어. mm→m, 원점 차감, OCS→WCS와 미러 변환부터 확인하고 새 버전으로 수정해줘.
 
-15. 03 · 원본 대조 뷰어 · 3C · 뷰어로 위치를 대조합니다
+16. 03 · 원본 대조 뷰어 · 3C · 뷰어로 위치를 대조합니다
 아래 뷰어 묶음을 다운로드하고 안내를 읽어줘.
 https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/viewer-tools.zip
 현재25B IFC를 유지하고 CAD Overlay Tools를 설치·활성화해줘. 도면 매핑에 unit-references/25B/image-map.json을 지정해 평면 대조와 입체 대조를 켜줘.
@@ -42,7 +53,7 @@ https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/viewer-tools.z
 안 되면
 도면을 못 찾거나 위치가 달라. 선택한 image-map.json 옆의 original-plan.png와 단위·원점이 현재 유닛에 맞는지 확인해줘.
 
-18. 04 · 상세를 잡아가기 · 4A · 부족한 상세만 골라 수정합니다
+19. 04 · 상세를 잡아가기 · 4A · 부족한 상세만 골라 수정합니다
 현재 25B IFC에서 원본과 비교해 WIN03, 샤워 구획, 가구 누락을 점검해줘.
 WIN03은 창틀 두 열(각 120mm, 총 240mm)과 창짝 4개를, 샤워 구획은 유리 고정판+문과 높이 2100mm를 확인해줘.
 하부장 850mm·식탁 750mm·수납 2200mm는 이번 예제의 검토값으로 사용해줘. 누락 가구는 적절한 IFC 클래스로 작성해줘.
@@ -51,7 +62,7 @@ WIN03은 창틀 두 열(각 120mm, 총 240mm)과 창짝 4개를, 샤워 구획�
 안 되면
 색만 바뀌고 실제 형상이 같아. 객체 이름 대신 실제 프레임·유리·고정판의 형상과 IFC 저장본을 확인해줘.
 
-21. 05 · 나의 첫 BIM 스킬 · 5A · 첫 모델의 작업 절차를 저장합니다
+22. 05 · 나의 첫 BIM 스킬 · 5A · 첫 모델의 작업 절차를 저장합니다
 지금 25B를 만들고 상세를 수정하면서 성공한 절차를 재사용 스킬로 만들어줘.
 내 실습 폴더의 skills/unit-bim/SKILL.md에 사용 조건, 도면 조사, IFC 생성, 상세 보완, 검증, 새 버전 저장 순서를 적어줘.
 원점·단위·FL/SL 확인과 두 열 창틀·가구·샤워문 점검을 포함하고 25B의 승인값은 예제 참조로 분리해줘.
@@ -60,7 +71,7 @@ WIN03은 창틀 두 열(각 120mm, 총 240mm)과 창짝 4개를, 샤워 구획�
 안 되면
 스킬이 너무 길고 25B 숫자만 나열돼 있어. 다른 도면에도 필요한 절차만 본문에 남기고 25B 값은 참조로 옮겨줘.
 
-23. 06 · 두 번째 단위세대 · 6A · 스킬을 읽고 54B를 만듭니다
+24. 06 · 두 번째 단위세대 · 6A · 스킬을 읽고 54B를 만듭니다
 내가 만든 skills/unit-bim/SKILL.md를 읽고 아래 54B 도면에 적용해줘.
 https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/54B-v003.dwg
 보조 DXF: https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/54B-reference.dxf
@@ -70,7 +81,7 @@ https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/54B-v0
 안 되면
 54B가 25B를 늘린 것처럼 나왔어. 원본 54B의 실명·개구부·가구 위치를 다시 읽고 확대 복사 대신 새 IFC로 작성해줘.
 
-28. 08 · IFC 타입 재사용 · 8A · 유닛을 처리 가능한 목록으로 정리합니다
+29. 08 · IFC 타입 재사용 · 8A · 유닛을 처리 가능한 목록으로 정리합니다
 아래 카탈로그에서 A32의 6설계타입·14배치형을 조사해줘.
 https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/materials/catalog.json
 전체 모델 대신 필요한 유닛 IFC 1~2개만 내려받아줘. 세대 파일과 실제 IfcTypeObject·MappedItem을 구분하고 원점·미러·회전·GUID·개구부 관계를 표로 정리해줘.
@@ -79,7 +90,7 @@ https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/materials/cata
 안 되면
 같은 평형이라며 미러 유닛을 합쳤어. 카탈로그의 배치형과 실제 현관·외벽 조건을 다시 확인하고 분리해줘.
 
-30. 09 · A32 기준층 · 9A · 기준층의 배치와 코어를 읽습니다
+31. 09 · A32 기준층 · 9A · 기준층의 배치와 코어를 읽습니다
 아래 A32 기준층과 동단면 DWG를 내려받아 조사해줘.
 https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/A32-5-23F.dwg
 https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/A32-sections.dwg
@@ -88,7 +99,7 @@ https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/A32-se
 안 되면
 블록 핸들이 같다며 세대가 빠졌어. 중첩 INSERT 경로·미러 변환·클립 범위로 발생 객체를 다시 식별해줘.
 
-31. 09 · A32 기준층 · 9B · 먼저 5층 한 개를 만듭니다
+32. 09 · A32 기준층 · 9B · 먼저 5층 한 개를 만듭니다
 앞서 읽은 A32 기준층으로 5층 한 개만 새 IFC로 작성해줘. 유닛 목록:
 https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/materials/catalog.json
 14세대는 해당 A32 배치형의 원래 크기·미러·방향으로 재사용하고 코어·복도·계단·문창·샤프트는 원본 도면으로 작성해줘. 단면의 5층 표고를 한 번만 적용해줘.
@@ -97,7 +108,7 @@ work/A32-05-v001.ifc로 저장해 새 Blender 창에서 원본과 대조해줘. 
 안 되면
 유닛이 도면 밖으로 밀렸어. 단위·기준점·카탈로그 배치 행렬과 층 표고의 중복 적용 여부를 확인해줘.
 
-34. 10 · 층별 원본 대조 · 9C · 기준층의 불일치를 찾습니다
+35. 10 · 층별 원본 대조 · 9C · 기준층의 불일치를 찾습니다
 아래 뷰어 안내와 ZIP을 사용해줘.
 https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/viewer-tools/README.md
 https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/viewer-tools.zip
@@ -107,7 +118,7 @@ https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/viewer-tools.z
 안 되면
 층이 없다는 오류가 나. 현재 IFC의 IfcBuildingStorey와 A32Storey.FloorId를 읽고 실제 존재하는 층을 선택해줘.
 
-36. 10 · 기준층 상세 수정 · 10A · 한 곳씩 고치고 다시 저장합니다
+37. 10 · 기준층 상세 수정 · 10A · 한 곳씩 고치고 다시 저장합니다
 현재 A32-05 IFC에서 원본과 다른 부분을 한 곳씩 검토해줘.
 계단 UP/DN·계단참·문틀·문 상부 벽·단열재·샤프트·창 주변에서 근거가 있는 항목만 수정해줘. 계단은 월드 하단·상단·참 표고로 확인해줘.
 대상 외 GUID·배치·형상·개구부 관계를 유지하고 work/A32-05-v002.ifc로 저장해줘. 수정 전후 캡처와 변경 목록을 남겨줘.
@@ -115,7 +126,7 @@ https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/viewer-tools.z
 안 되면
 계단 높이를 고쳤더니 폭이 바뀌었어. 압출 방향과 단면 좌표를 읽고 월드 표고로 높이를 검사해줘.
 
-37. 11 · 층 작업 스킬 · 11A · 수정 과정을 층 작업 스킬로 만듭니다
+38. 11 · 층 작업 스킬 · 11A · 수정 과정을 층 작업 스킬로 만듭니다
 방금 A32 기준층을 만들고 수정한 과정으로 skills/floor-bim/SKILL.md를 작성해줘.
 유닛 배치형 대응, 중첩 블록·미러·클립, 공용부·계단·개구부, 층고 근거, GUID·매핑, 원본 대조, 새 버전 저장 검사를 포함해줘.
 층별 예외를 분리하고 5~23층의 반복부와 24층처럼 다른 구성을 구별해줘. 본문에 기존 프로젝트의 절대 경로·PID를 고정하지 마.
@@ -123,7 +134,7 @@ https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/viewer-tools.z
 안 되면
 스킬이 5층 파일을 그대로 복사하라고만 해. 다른 층 도면의 공용부·테라스·레벨 차이를 확인하는 절차로 고쳐줘.
 
-38. 11 · 반복층 출력 · 5~23층은 19개 파일로 나눕니다
+39. 11 · 반복층 출력 · 5~23층은 19개 파일로 나눕니다
 검토한 기준층으로 5층부터 23층까지 19개 IFC를 각각 저장해줘. 일반층 간격은 이번 A32 단면의 치수를 사용해줘.
 한 파일에 한 층만 두고 해당 층의 표고와 고유 발생 GUID를 부여해줘. 반복 형상은 타입·매핑으로 공유하고 개구부·문창·재료 관계를 유지해줘.
 모든 층을 Blender 한 장면에 로드하지 말고 5층과 6층을 번갈아 열어 표고·GUID·형상을 표본 검사해줘.
@@ -131,7 +142,7 @@ https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/viewer-tools.z
 안 되면
 각 층의 높이가 두 배가 됐어. 층 Elevation과 부재 ObjectPlacement에 같은 표고를 중복 적용했는지 확인해줘.
 
-41. 12 · 다른 층에 적용 · 12A · 층 스킬로 24층을 만듭니다
+42. 12 · 다른 층에 적용 · 12A · 층 스킬로 24층을 만듭니다
 내 skills/floor-bim/SKILL.md를 읽고 아래 DWG의 24층에 적용해줘.
 https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/A32-all-plans.dwg
 단면: https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/A32-sections.dwg
@@ -141,7 +152,7 @@ https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/A32-al
 안 되면
 24층에도 14세대가 남아 있어. 원본 24층 영역과 타입 대응을 다시 읽고 다른 층의 복사본을 제거해줘.
 
-46. 14 · 면적산출 실습 · 14A · IFC와 Blender에서 면적을 대조합니다
+47. 14 · 면적산출 실습 · 14A · IFC와 Blender에서 면적을 대조합니다
 면적 실습 ZIP을 내려받아 풀고 tools/README.md와 area-lab/README.md를 읽어줘.
 https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/area-lab.zip
 별도 Python 환경에 tools/requirements.txt를 설치하고 tools/area_schedule.py를 같은 폴더의 area_extract.py와 함께 사용해줘.

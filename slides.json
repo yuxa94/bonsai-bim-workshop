@@ -1,5 +1,29 @@
 [
   {
+    "part": "00 · 먼저 복사하세요",
+    "time": "수업 시작 · 00분",
+    "title": "Bonsai·IfcOpenShell 설치를 맡깁니다",
+    "lead": "요청 복사 → 실습 폴더를 연 Codex에 붙여넣기 → 설치 중 다음 설명을 듣습니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "Blender는 다운로드했어. 이 Windows PC에 Bonsai와 IfcOpenShell을 실제 설치하고 확인해줘.\n설치 안내: https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/guides/01-connect-and-install.md\nBlender 실행 파일·버전·내부 Python·기존 설치를 확인하고 공식 배포처의 호환 Bonsai 안정판을 설치·활성화해줘. 정상 설치와 기존 모델·다른 창은 보존해줘.\nBonsai 포함 IfcOpenShell의 Blender 내부 import를 확인하고, 면적산출용 별도 Python 가상환경에도 ifcopenshell을 설치해줘.\nMCP 미연결이면 터미널 작업부터 진행해줘. 안내만 하지 말고 가능한 설치를 끝내고 필요한 승인·클릭·재시작만 알려줘.\n다운로드 시작을 알리고 실제 결과·버전·경로·남은 단계를 work/setup-check.md에 기록해줘.",
+    "terms": [
+      [
+        "설치 확인",
+        "Blender 내부와 면적산출용 Python을 구분합니다."
+      ]
+    ],
+    "checks": [
+      "설치 다운로드가 시작됐다.",
+      "Bonsai 활성화와 내부 import를 확인했다.",
+      "별도 Python 설치 결과를 기록했다."
+    ],
+    "repair": "설치가 멈췄어. 실패 명령과 원문 오류, Blender·Python 버전, 다운로드·설치·활성화 중 막힌 단계를 확인해서 이어서 처리해줘.",
+    "note": "표지보다 먼저 보여주는 복사 요청이다. 설치를 시작하고 기존00~25분의 연결·개념 설명을 이어가며240분은 유지한다. 공식 안내에 따라 안정판 호환을 확인하고 alpha/daily를 기본 선택하지 않는다. Blender 포함 모듈을 외부 pip로 덮어쓰지 않는다. MCP 미연결 상태에서는 로컬 터미널 등 사용 가능한 도구로 진행하며 필요한 학생 조작·권한이 남으면 미완료로 기록한다. 새 PC에서 무인 설치 전체를 보장하는 스크립트는 아니다."
+  },
+  {
     "part": "WORKSHOP 2026",
     "time": "240분 · Windows",
     "title": "DWG에서 시작해\nBIM 작업을 스킬로 남기다",

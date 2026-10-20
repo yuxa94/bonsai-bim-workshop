@@ -18,8 +18,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1466,
-      "sha256": "3207d35c435bd34dcda44a7bf5ffeca97da14b83510b55104e6716e2fa8f190a"
+      "bytes": 1582,
+      "sha256": "4bf077a2d5262486f54ce58bcb58e50bcfb0996d50ab0c75873a24852e20fdd9"
     },
     {
       "path": "area-lab.zip",
@@ -157,14 +157,19 @@
       "sha256": "1f2f934054aee05c3ca13987c688024c3510609b517c5a1574cc049c9abe63d6"
     },
     {
+      "path": "evidence/install-front-verification.json",
+      "bytes": 568,
+      "sha256": "c52cdffed8fe0b02e0f5c2b841b0449721e203761638a411f1448430b216ec14"
+    },
+    {
       "path": "evidence/pdf-layout.json",
-      "bytes": 4498,
-      "sha256": "172f5ef4efbed3aadd612510fb9bc458005fb365ed0cc93112bc518885a1a421"
+      "bytes": 4592,
+      "sha256": "ab4187b8eabfd2047ab10748bf0b35678ce603a97087db74f3e5f342426ff9f5"
     },
     {
       "path": "evidence/release.json",
-      "bytes": 1243,
-      "sha256": "a1e4fdf5109716454b11b3a8ddfd9b901bfb4568a7ca5be990a1044bef68f254"
+      "bytes": 1266,
+      "sha256": "d0452f55327a135ad83dac997140d88de895f930fad02b4fd2097d947a25a038"
     },
     {
       "path": "evidence/viewer-verification.json",
@@ -173,8 +178,8 @@
     },
     {
       "path": "guides/01-connect-and-install.md",
-      "bytes": 8800,
-      "sha256": "3c742181f041e9961ef11073fa51fb4a916603a0714652672de26faad5a9a2f4"
+      "bytes": 10348,
+      "sha256": "fa3f72be2519097a6a6fdae0d9ef3d47e91b569e0bf83230f8dfada4db5b8381"
     },
     {
       "path": "guides/02-first-unit-and-personal-skill.md",
@@ -293,18 +298,18 @@
     },
     {
       "path": "index.html",
-      "bytes": 64755,
-      "sha256": "40dc8b9ac0381774b8259fa55916b1192253c469bacdca85b0c6fcc5344ddf7f"
+      "bytes": 66939,
+      "sha256": "e9d9ca842139715a85dc0d7fb1187540b02d522a32d0e127cc196cd9e5dc77cb"
     },
     {
       "path": "instructor-notes.md",
-      "bytes": 12038,
-      "sha256": "e83b1bd4e7bc2f92420004f87ccd5eba2f6fdca9b81cefcf361340542ea7c0e5"
+      "bytes": 12659,
+      "sha256": "ee3523a1fb0f63ddaeb1c0ed4b7f49a11ea5610cf472185c3cd214c205ea5905"
     },
     {
       "path": "lecture.pdf",
-      "bytes": 3173545,
-      "sha256": "273944fb25d86bdd06121340e3801a6da4f1658d56f044222fb17472d44a8b51"
+      "bytes": 3178119,
+      "sha256": "04da4ed1d0bfd99042d47e9f642eedd0d0f47922895e0888d304b4d9e2431c55"
     },
     {
       "path": "materials/asset-report.json",
@@ -1883,8 +1888,8 @@
     },
     {
       "path": "prompts.txt",
-      "bytes": 12881,
-      "sha256": "a4a17bc1953554b6d1c27d5727daed5ff0910aec8d54fb0a278d056b8a9bef0c"
+      "bytes": 14010,
+      "sha256": "4f37e508658fdacecb284225439313368c12c7b8ca16d34f13ccadacf714e7fa"
     },
     {
       "path": "schedule.json",
@@ -1913,8 +1918,8 @@
     },
     {
       "path": "slides.json",
-      "bytes": 59779,
-      "sha256": "2f7833df9dafe3c02f151d88bb2ec780cb1e9724b7d435cc248a2ceca5f1d484"
+      "bytes": 62105,
+      "sha256": "69b5bdddd9741ddcc29c3ec947f20694f580385c1a6aba35d3a2938881e9be30"
     },
     {
       "path": "sources/25B-reference.dxf",

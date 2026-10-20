@@ -2,12 +2,12 @@
   "date": "2026-10-21",
   "course_minutes": 240,
   "break_minutes": 20,
-  "slides": 48,
+  "slides": 49,
   "unit_models": 18,
   "floor_models": 33,
   "ifc_blend_pairs_verified": 51,
   "max_file_bytes": 16807822,
-  "payload_bytes": 407808707,
+  "payload_bytes": 407831460,
   "asset_hashes_checked": 51,
   "missing_links": [],
   "private_path_scan_files": [],
@@ -16,8 +16,8 @@
   "source_thread": "Blender에서 3D 모델 만들기",
   "source_floor_dwg_sha256": "4b1c2d0df4367606cc0dc498946bb0e90dbb07af41267763663aa7898c5b8511",
   "area_tests": 5,
-  "browser_ui": "Published viewer slides 14,33,34 verified at commit 338d2c9; 48-slide count, viewer links, prompt content, no broken loaded images or horizontal overflow. Previous 44-slide interactions verified in prior release.",
-  "pdf_pages_reviewed": "48 pages: previous 44 reviewed; new pages 14,15,33,34 rendered and visually reviewed",
+  "browser_ui": "Prior release UI verified. New installation page uses the existing copy template. Post-publication browser check is recorded separately in the project training log.",
+  "pdf_pages_reviewed": "49 pages: previous 48 content reviewed in prior releases, new page 1 rendered and visually reviewed",
   "limitations": [
     "Blender snapshots are for display; adjacent IFC is authoritative",
     "Student setup and LLM modelling time varies",
@@ -25,5 +25,6 @@
   ],
   "viewer_native_tests": 2,
   "viewer_ifc_unchanged": true,
-  "viewer_zip_crc": "passed"
+  "installation_prompt_first_page": true,
+  "fresh_pc_installation_executed": false
 }

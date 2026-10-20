@@ -1,7 +1,7 @@
 [
   {
     "slide": 1,
-    "main_content_bottom": 550,
+    "main_content_bottom": 566.1,
     "within_main_area": true
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "slide": 3,
-    "main_content_bottom": 426.0,
+    "main_content_bottom": 550,
     "within_main_area": true
   },
   {
@@ -21,62 +21,62 @@
   },
   {
     "slide": 5,
-    "main_content_bottom": 379.4,
-    "within_main_area": true
-  },
-  {
-    "slide": 6,
-    "main_content_bottom": 573.0,
-    "within_main_area": true
-  },
-  {
-    "slide": 7,
-    "main_content_bottom": 340.5,
-    "within_main_area": true
-  },
-  {
-    "slide": 8,
     "main_content_bottom": 426.0,
     "within_main_area": true
   },
   {
+    "slide": 6,
+    "main_content_bottom": 379.4,
+    "within_main_area": true
+  },
+  {
+    "slide": 7,
+    "main_content_bottom": 573.0,
+    "within_main_area": true
+  },
+  {
+    "slide": 8,
+    "main_content_bottom": 340.5,
+    "within_main_area": true
+  },
+  {
     "slide": 9,
-    "main_content_bottom": 404.2,
+    "main_content_bottom": 426.0,
     "within_main_area": true
   },
   {
     "slide": 10,
-    "main_content_bottom": 573.0,
+    "main_content_bottom": 404.2,
     "within_main_area": true
   },
   {
     "slide": 11,
-    "main_content_bottom": 503.4,
-    "within_main_area": true
-  },
-  {
-    "slide": 12,
-    "main_content_bottom": 429.0,
-    "within_main_area": true
-  },
-  {
-    "slide": 13,
     "main_content_bottom": 573.0,
     "within_main_area": true
   },
   {
+    "slide": 12,
+    "main_content_bottom": 503.4,
+    "within_main_area": true
+  },
+  {
+    "slide": 13,
+    "main_content_bottom": 429.0,
+    "within_main_area": true
+  },
+  {
     "slide": 14,
-    "main_content_bottom": 516.0,
+    "main_content_bottom": 573.0,
     "within_main_area": true
   },
   {
     "slide": 15,
-    "main_content_bottom": 453.8,
+    "main_content_bottom": 516.0,
     "within_main_area": true
   },
   {
     "slide": 16,
-    "main_content_bottom": 586.0,
+    "main_content_bottom": 453.8,
     "within_main_area": true
   },
   {
@@ -86,67 +86,67 @@
   },
   {
     "slide": 18,
-    "main_content_bottom": 453.8,
+    "main_content_bottom": 586.0,
     "within_main_area": true
   },
   {
     "slide": 19,
-    "main_content_bottom": 426.0,
+    "main_content_bottom": 453.8,
     "within_main_area": true
   },
   {
     "slide": 20,
-    "main_content_bottom": 358.5,
-    "within_main_area": true
-  },
-  {
-    "slide": 21,
-    "main_content_bottom": 478.6,
-    "within_main_area": true
-  },
-  {
-    "slide": 22,
-    "main_content_bottom": 573.0,
-    "within_main_area": true
-  },
-  {
-    "slide": 23,
-    "main_content_bottom": 528.2,
-    "within_main_area": true
-  },
-  {
-    "slide": 24,
-    "main_content_bottom": 573.0,
-    "within_main_area": true
-  },
-  {
-    "slide": 25,
-    "main_content_bottom": 550,
-    "within_main_area": true
-  },
-  {
-    "slide": 26,
-    "main_content_bottom": 358.5,
-    "within_main_area": true
-  },
-  {
-    "slide": 27,
     "main_content_bottom": 426.0,
     "within_main_area": true
   },
   {
-    "slide": 28,
-    "main_content_bottom": 503.4,
+    "slide": 21,
+    "main_content_bottom": 358.5,
     "within_main_area": true
   },
   {
-    "slide": 29,
+    "slide": 22,
+    "main_content_bottom": 478.6,
+    "within_main_area": true
+  },
+  {
+    "slide": 23,
     "main_content_bottom": 573.0,
     "within_main_area": true
   },
   {
-    "slide": 30,
+    "slide": 24,
+    "main_content_bottom": 528.2,
+    "within_main_area": true
+  },
+  {
+    "slide": 25,
+    "main_content_bottom": 573.0,
+    "within_main_area": true
+  },
+  {
+    "slide": 26,
+    "main_content_bottom": 550,
+    "within_main_area": true
+  },
+  {
+    "slide": 27,
+    "main_content_bottom": 358.5,
+    "within_main_area": true
+  },
+  {
+    "slide": 28,
+    "main_content_bottom": 426.0,
+    "within_main_area": true
+  },
+  {
+    "slide": 29,
     "main_content_bottom": 503.4,
+    "within_main_area": true
+  },
+  {
+    "slide": 30,
+    "main_content_bottom": 573.0,
     "within_main_area": true
   },
   {
@@ -156,27 +156,27 @@
   },
   {
     "slide": 32,
-    "main_content_bottom": 573.0,
+    "main_content_bottom": 503.4,
     "within_main_area": true
   },
   {
     "slide": 33,
-    "main_content_bottom": 516.0,
-    "within_main_area": true
-  },
-  {
-    "slide": 34,
-    "main_content_bottom": 528.2,
-    "within_main_area": true
-  },
-  {
-    "slide": 35,
     "main_content_bottom": 573.0,
     "within_main_area": true
   },
   {
+    "slide": 34,
+    "main_content_bottom": 516.0,
+    "within_main_area": true
+  },
+  {
+    "slide": 35,
+    "main_content_bottom": 528.2,
+    "within_main_area": true
+  },
+  {
     "slide": 36,
-    "main_content_bottom": 429.0,
+    "main_content_bottom": 573.0,
     "within_main_area": true
   },
   {
@@ -186,56 +186,61 @@
   },
   {
     "slide": 38,
-    "main_content_bottom": 453.8,
+    "main_content_bottom": 429.0,
     "within_main_area": true
   },
   {
     "slide": 39,
-    "main_content_bottom": 550,
+    "main_content_bottom": 453.8,
     "within_main_area": true
   },
   {
     "slide": 40,
-    "main_content_bottom": 573.0,
+    "main_content_bottom": 550,
     "within_main_area": true
   },
   {
     "slide": 41,
-    "main_content_bottom": 528.2,
-    "within_main_area": true
-  },
-  {
-    "slide": 42,
     "main_content_bottom": 573.0,
     "within_main_area": true
   },
   {
+    "slide": 42,
+    "main_content_bottom": 528.2,
+    "within_main_area": true
+  },
+  {
     "slide": 43,
-    "main_content_bottom": 358.5,
+    "main_content_bottom": 573.0,
     "within_main_area": true
   },
   {
     "slide": 44,
-    "main_content_bottom": 516.0,
+    "main_content_bottom": 358.5,
     "within_main_area": true
   },
   {
     "slide": 45,
-    "main_content_bottom": 426.0,
+    "main_content_bottom": 516.0,
     "within_main_area": true
   },
   {
     "slide": 46,
-    "main_content_bottom": 478.6,
+    "main_content_bottom": 426.0,
     "within_main_area": true
   },
   {
     "slide": 47,
-    "main_content_bottom": 586.0,
+    "main_content_bottom": 478.6,
     "within_main_area": true
   },
   {
     "slide": 48,
+    "main_content_bottom": 586.0,
+    "within_main_area": true
+  },
+  {
+    "slide": 49,
     "main_content_bottom": 426.0,
     "within_main_area": true
   }
