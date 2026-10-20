@@ -1,0 +1,123 @@
+{
+  "sanitized_copies": [
+    {
+      "id": "25B",
+      "changes": [
+        {
+          "step_id": 20,
+          "property_name": "DWG",
+          "published_value": "sources/25B-v003.dwg"
+        },
+        {
+          "step_id": 4733,
+          "property_name": "BaseIFC",
+          "published_value": "provenance/base-live.ifc"
+        }
+      ],
+      "all_other_step_records_identical": true,
+      "all_guids_identical": true,
+      "source_sha256": "3405209a0452db5295b777880cfbadd49fea4bea8398e1034e52fa330cdbd0cd",
+      "published_sha256": "b1ba21cbb084bfb8ea0a89bae496faeab26b7e86b88f4ce862dc05fcf395d26e"
+    },
+    {
+      "id": "54B",
+      "changes": [
+        {
+          "step_id": 20,
+          "property_name": "DWG",
+          "published_value": "sources/54B-v003.dwg"
+        },
+        {
+          "step_id": 9022,
+          "property_name": "MappingPath",
+          "published_value": "provenance/image-map.json"
+        }
+      ],
+      "all_other_step_records_identical": true,
+      "all_guids_identical": true,
+      "source_sha256": "de9b5f69713eeb43850ea82485096d9d05166610434d828addc2d9b82dd153ec",
+      "published_sha256": "e141b618a2b08278a7ee280275e3d86541aa972ae41b0613ff99bbc7605da9b2"
+    },
+    {
+      "id": "65B",
+      "changes": [
+        {
+          "step_id": 20,
+          "property_name": "DWG",
+          "published_value": "sources/65B-v003.dwg"
+        },
+        {
+          "step_id": 2204,
+          "property_name": "SourceDWG",
+          "published_value": "sources/65B-v003.dwg"
+        },
+        {
+          "step_id": 3189,
+          "property_name": "SourceDWG",
+          "published_value": "sources/65B-v003.dwg"
+        },
+        {
+          "step_id": 4174,
+          "property_name": "SourceDWG",
+          "published_value": "sources/65B-v003.dwg"
+        },
+        {
+          "step_id": 5159,
+          "property_name": "SourceDWG",
+          "published_value": "sources/65B-v003.dwg"
+        },
+        {
+          "step_id": 5962,
+          "property_name": "SourceDWG",
+          "published_value": "sources/65B-v003.dwg"
+        },
+        {
+          "step_id": 6765,
+          "property_name": "SourceDWG",
+          "published_value": "sources/65B-v003.dwg"
+        },
+        {
+          "step_id": 8371,
+          "property_name": "SourceDWG",
+          "published_value": "sources/65B-v003.dwg"
+        },
+        {
+          "step_id": 7568,
+          "property_name": "SourceDWG",
+          "published_value": "sources/65B-v003.dwg"
+        },
+        {
+          "step_id": 17497,
+          "property_name": "MappingPath",
+          "published_value": "provenance/image-map.json"
+        }
+      ],
+      "all_other_step_records_identical": true,
+      "all_guids_identical": true,
+      "source_sha256": "12215f8bd48275dcaef5a1fc97b893b6440c8b7bcd21b4667b921077fb56e05b",
+      "published_sha256": "0ee6fba3333995a9611b40d3455debb2eaf455c0086f512803e390415e0a22d3"
+    },
+    {
+      "id": "84AB",
+      "changes": [
+        {
+          "step_id": 20,
+          "property_name": "DWG",
+          "published_value": "sources/84AB-v003.dwg"
+        },
+        {
+          "step_id": 15132,
+          "property_name": "MappingPath",
+          "published_value": "provenance/image-map.json"
+        }
+      ],
+      "all_other_step_records_identical": true,
+      "all_guids_identical": true,
+      "source_sha256": "ef8946d2c2ca1aaa8e8a925284ed0ab0e2fec6a422f9dbe5e4e5f08b5763e2d9",
+      "published_sha256": "3336c765f336f9c57ab0563710dfa5d455615c867a2c6dc3457870fdd6ff6f5f"
+    }
+  ],
+  "count": 4,
+  "originals_modified": false,
+  "geometry_placement_and_guid_records_identical": true
+}

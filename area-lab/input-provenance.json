@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "inputfile": "25B.ifc",
+      "source_library": "assets/apartment-types/20261019-v1/25B/model/25B.ifc",
+      "revision": "25B-v002",
+      "current_pointer": "output/current-unit.json",
+      "library_source_matches_current_output_25b": true,
+      "original_library_sha256": "3405209a0452db5295b777880cfbadd49fea4bea8398e1034e52fa330cdbd0cd",
+      "public_metadata_change": "DWG and BaseIFC absolute provenance paths replaced by relative paths. Geometry and GUID unchanged.",
+      "public_asset_audit": "../materials/units/25B/asset.json",
+      "sha256": "b1ba21cbb084bfb8ea0a89bae496faeab26b7e86b88f4ce862dc05fcf395d26e",
+      "bytes": 270732
+    },
+    {
+      "inputfile": "A32-05.ifc",
+      "source_library": "output/a32-residential/v011/floors/A32-05.ifc",
+      "revision": "A32-v011",
+      "current_pointer": "output/current-a32-residential.json",
+      "scope": "Single floor 05, not all-tower file",
+      "sha256": "f00eefecaa1b5bac3c4a7b722d84d54ec9e7698c9e696b44d8fa6acd59a6fe6f",
+      "bytes": 5315939
+    }
+  ],
+  "dimension_source": {
+    "drawing": "A17-001",
+    "architecture_pdf_page": 31,
+    "type": "A32 25 (distinct from standalone 25B)",
+    "basis": "Recorded source-dimension worksheet from jobs/a32-reference-deliverables-v001/forms.json"
+  },
+  "no_ifc_or_live_blender_writes": true
+}

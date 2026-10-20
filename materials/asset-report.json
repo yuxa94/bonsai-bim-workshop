@@ -1,0 +1,296 @@
+{
+  "catalog": "materials/catalog.json",
+  "counts": {
+    "units": 18,
+    "floors": 33,
+    "ifc": 51,
+    "blend_verified": 51
+  },
+  "total_bytes": {
+    "ifc_bytes": 133831837,
+    "blend_bytes": 66768607,
+    "download_bytes": 110196830,
+    "preview_bytes": 4503212
+  },
+  "failures": [],
+  "originals_modified": false,
+  "interactive_sessions_used": false,
+  "whole_tower_staged": false,
+  "snapshot_method": "Fresh background Bonsai import; save_as_mainfile(copy=True); reopen and inspect",
+  "byte_identical_ifc_copies": 47,
+  "metadata_only_sanitized_ifc_copies": 4,
+  "source_geometry_and_guid_records_preserved": true,
+  "floor_guid_union": {
+    "source_elements": 22415,
+    "floor_element_guids_union": 22415,
+    "missing_from_floors": 0,
+    "extra_in_floors": 0,
+    "floors": [
+      [
+        "B5",
+        170
+      ],
+      [
+        "B4",
+        197
+      ],
+      [
+        "B3",
+        193
+      ],
+      [
+        "B2",
+        194
+      ],
+      [
+        "B1",
+        224
+      ],
+      [
+        "01",
+        504
+      ],
+      [
+        "02",
+        395
+      ],
+      [
+        "PIT",
+        196
+      ],
+      [
+        "03",
+        961
+      ],
+      [
+        "04",
+        935
+      ],
+      [
+        "05",
+        925
+      ],
+      [
+        "06",
+        925
+      ],
+      [
+        "07",
+        925
+      ],
+      [
+        "08",
+        925
+      ],
+      [
+        "09",
+        925
+      ],
+      [
+        "10",
+        925
+      ],
+      [
+        "11",
+        925
+      ],
+      [
+        "12",
+        925
+      ],
+      [
+        "13",
+        925
+      ],
+      [
+        "14",
+        925
+      ],
+      [
+        "15",
+        925
+      ],
+      [
+        "16",
+        925
+      ],
+      [
+        "17",
+        925
+      ],
+      [
+        "18",
+        925
+      ],
+      [
+        "19",
+        925
+      ],
+      [
+        "20",
+        925
+      ],
+      [
+        "21",
+        925
+      ],
+      [
+        "22",
+        925
+      ],
+      [
+        "23",
+        971
+      ],
+      [
+        "24",
+        585
+      ],
+      [
+        "RF",
+        209
+      ],
+      [
+        "PH",
+        28
+      ],
+      [
+        "PHR",
+        3
+      ]
+    ]
+  },
+  "metadata_sanitization": {
+    "sanitized_copies": [
+      {
+        "id": "25B",
+        "changes": [
+          {
+            "step_id": 20,
+            "property_name": "DWG",
+            "published_value": "sources/25B-v003.dwg"
+          },
+          {
+            "step_id": 4733,
+            "property_name": "BaseIFC",
+            "published_value": "provenance/base-live.ifc"
+          }
+        ],
+        "all_other_step_records_identical": true,
+        "all_guids_identical": true,
+        "source_sha256": "3405209a0452db5295b777880cfbadd49fea4bea8398e1034e52fa330cdbd0cd",
+        "published_sha256": "b1ba21cbb084bfb8ea0a89bae496faeab26b7e86b88f4ce862dc05fcf395d26e"
+      },
+      {
+        "id": "54B",
+        "changes": [
+          {
+            "step_id": 20,
+            "property_name": "DWG",
+            "published_value": "sources/54B-v003.dwg"
+          },
+          {
+            "step_id": 9022,
+            "property_name": "MappingPath",
+            "published_value": "provenance/image-map.json"
+          }
+        ],
+        "all_other_step_records_identical": true,
+        "all_guids_identical": true,
+        "source_sha256": "de9b5f69713eeb43850ea82485096d9d05166610434d828addc2d9b82dd153ec",
+        "published_sha256": "e141b618a2b08278a7ee280275e3d86541aa972ae41b0613ff99bbc7605da9b2"
+      },
+      {
+        "id": "65B",
+        "changes": [
+          {
+            "step_id": 20,
+            "property_name": "DWG",
+            "published_value": "sources/65B-v003.dwg"
+          },
+          {
+            "step_id": 2204,
+            "property_name": "SourceDWG",
+            "published_value": "sources/65B-v003.dwg"
+          },
+          {
+            "step_id": 3189,
+            "property_name": "SourceDWG",
+            "published_value": "sources/65B-v003.dwg"
+          },
+          {
+            "step_id": 4174,
+            "property_name": "SourceDWG",
+            "published_value": "sources/65B-v003.dwg"
+          },
+          {
+            "step_id": 5159,
+            "property_name": "SourceDWG",
+            "published_value": "sources/65B-v003.dwg"
+          },
+          {
+            "step_id": 5962,
+            "property_name": "SourceDWG",
+            "published_value": "sources/65B-v003.dwg"
+          },
+          {
+            "step_id": 6765,
+            "property_name": "SourceDWG",
+            "published_value": "sources/65B-v003.dwg"
+          },
+          {
+            "step_id": 8371,
+            "property_name": "SourceDWG",
+            "published_value": "sources/65B-v003.dwg"
+          },
+          {
+            "step_id": 7568,
+            "property_name": "SourceDWG",
+            "published_value": "sources/65B-v003.dwg"
+          },
+          {
+            "step_id": 17497,
+            "property_name": "MappingPath",
+            "published_value": "provenance/image-map.json"
+          }
+        ],
+        "all_other_step_records_identical": true,
+        "all_guids_identical": true,
+        "source_sha256": "12215f8bd48275dcaef5a1fc97b893b6440c8b7bcd21b4667b921077fb56e05b",
+        "published_sha256": "0ee6fba3333995a9611b40d3455debb2eaf455c0086f512803e390415e0a22d3"
+      },
+      {
+        "id": "84AB",
+        "changes": [
+          {
+            "step_id": 20,
+            "property_name": "DWG",
+            "published_value": "sources/84AB-v003.dwg"
+          },
+          {
+            "step_id": 15132,
+            "property_name": "MappingPath",
+            "published_value": "provenance/image-map.json"
+          }
+        ],
+        "all_other_step_records_identical": true,
+        "all_guids_identical": true,
+        "source_sha256": "ef8946d2c2ca1aaa8e8a925284ed0ab0e2fec6a422f9dbe5e4e5f08b5763e2d9",
+        "published_sha256": "3336c765f336f9c57ab0563710dfa5d455615c867a2c6dc3457870fdd6ff6f5f"
+      }
+    ],
+    "count": 4,
+    "originals_modified": false,
+    "geometry_placement_and_guid_records_identical": true
+  },
+  "blender_ui_directory_sanitized_and_reopened": true,
+  "public_privacy": {
+    "blend_binaries_decompressed_and_scanned": 51,
+    "public_text_files_scanned": true,
+    "local_userprofile_tokens_found": [],
+    "individual_archives_verified": 51,
+    "archive_members_match_current_files": 261,
+    "whole_tower_file_present": false,
+    "all_files_under_100MB": true
+  }
+}

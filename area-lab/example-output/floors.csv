@@ -1,0 +1,3 @@
+﻿inputfile,storey,slab_xy_sum_m2,floor_xy_union_m2,overlap_removed_m2,registered_unit_sum_m2,registered_unit_union_m2,outside_registered_unit_m2,landing_xy_union_m2,roof_xy_union_m2,represented_space_sum_m2,space_xy_union_m2,registered_unit_count,limitations
+25B.ifc,기준층 / SL ±0,30.1908,30.1908,0.0,0.0,0.0,30.1908,,,23.7256,23.7256,0,Outside registered unit may include walls/core/unclassified use; not statutory common area.
+A32-05.ifc,05,994.5317999999997,994.5318000000003,-5.684341886080801e-13,749.5141847081719,749.514184708172,245.01761529182826,11.448,,,,14,Outside registered unit may include walls/core/unclassified use; not statutory common area.

@@ -1,0 +1,68 @@
+{
+  "id": "25B",
+  "label": "25B 단위세대",
+  "group": "units",
+  "ifc": "materials/units/25B/25B.ifc",
+  "blend": "materials/units/25B/25B.blend",
+  "preview": "materials/units/25B/preview.png",
+  "download": "materials/units/25B/25B.zip",
+  "readme": "materials/units/25B/README.md",
+  "ifc_sha256": "b1ba21cbb084bfb8ea0a89bae496faeab26b7e86b88f4ce862dc05fcf395d26e",
+  "ifc_bytes": 270732,
+  "source_ifc_sha256": "3405209a0452db5295b777880cfbadd49fea4bea8398e1034e52fa330cdbd0cd",
+  "byte_identical_to_source": false,
+  "metadata_sanitization": [
+    {
+      "property_value_replaced_with": "sources/25B-v003.dwg"
+    },
+    {
+      "property_value_replaced_with": "provenance/base-live.ifc"
+    }
+  ],
+  "schema": "IFC4",
+  "product_count": 89,
+  "element_count": 81,
+  "represented_count": 80,
+  "void_feature_count": 6,
+  "storeys": 1,
+  "snapshot_role": "IFC 기반 표시 스냅샷. BIM의 기준 파일은 같은 폴더의 IFC.",
+  "preview_role": "해당 IFC를 Bonsai로 가져온 실제 메시의 평면·입체 투영. 화면 캡처나 원본 CAD가 아님.",
+  "family": "standalone",
+  "type": "25B",
+  "revision": "25B-v002",
+  "source_catalog": "assets/apartment-types/20261019-v1",
+  "limitations": "Review assumptions apply. Window profiles and some fixtures are approximate.",
+  "source_review": "materials/units/25B/source-review.png",
+  "source_review_role": "기존 검토용 Blender 렌더 이미지. 화면 캡처와 구분.",
+  "verification": {
+    "snapshot_reopened": true,
+    "loaded_representations": 80,
+    "mesh_objects": 80,
+    "missing_products": [],
+    "source_unchanged": true,
+    "staged_ifc_unchanged": true,
+    "relative_ifc_link": "25B.ifc",
+    "blender": "4.4.0",
+    "bonsai": "0.9.0-post1-py311",
+    "bounds_m": [
+      [
+        0.0,
+        -0.9990000128746033,
+        -0.25
+      ],
+      [
+        3.619999885559082,
+        8.34000015258789,
+        2.799999952316284
+      ]
+    ],
+    "snapshot_reopened_after_ui_sanitization": true,
+    "ui_directory_sanitized": true,
+    "has_blend_warning_after_reopen": true
+  },
+  "blend_bytes": 316032,
+  "blend_sha256": "b2da3092467b8152cd758666597f6dd50c9205b90dd3285ec13a8ade0434c842",
+  "preview_bytes": 57154,
+  "native_screenshot": "materials/units/25B/blender-screen.png",
+  "native_screenshot_role": "새로 실행한 별도 Blender 창에서 해당 BLEND를 연 실제 화면 캡처."
+}

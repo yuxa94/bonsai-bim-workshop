@@ -1,0 +1,59 @@
+{
+  "id": "A32-PIT",
+  "label": "A32 PIT층",
+  "group": "floors",
+  "ifc": "materials/floors/A32-PIT/A32-PIT.ifc",
+  "blend": "materials/floors/A32-PIT/A32-PIT.blend",
+  "preview": "materials/floors/A32-PIT/preview.png",
+  "download": "materials/floors/A32-PIT/A32-PIT.zip",
+  "readme": "materials/floors/A32-PIT/README.md",
+  "ifc_sha256": "2eb39a89c28d6a00953a22bfa13d40bcca8de49161800cd66ecff2a5473b6494",
+  "ifc_bytes": 709146,
+  "source_ifc_sha256": "2eb39a89c28d6a00953a22bfa13d40bcca8de49161800cd66ecff2a5473b6494",
+  "byte_identical_to_source": true,
+  "metadata_sanitization": [],
+  "schema": "IFC4",
+  "product_count": 199,
+  "element_count": 196,
+  "represented_count": 196,
+  "void_feature_count": 0,
+  "storeys": 1,
+  "snapshot_role": "IFC 기반 표시 스냅샷. BIM의 기준 파일은 같은 폴더의 IFC.",
+  "preview_role": "해당 IFC를 Bonsai로 가져온 실제 메시의 평면·입체 투영. 화면 캡처나 원본 CAD가 아님.",
+  "floor": "PIT",
+  "elevation_m": 10.9,
+  "unit_count": 0,
+  "revision": "v011",
+  "prototype": "PIT",
+  "source_catalog": "output/a32-residential/v011/manifest.json",
+  "limitations": "전층 모델의 해당 층 저장본. GUID·월드 좌표를 보존. 수직 상세·경사·법정면적·법규는 검토 상태.",
+  "verification": {
+    "snapshot_reopened": true,
+    "loaded_representations": 196,
+    "mesh_objects": 196,
+    "missing_products": [],
+    "source_unchanged": true,
+    "staged_ifc_unchanged": true,
+    "relative_ifc_link": "A32-PIT.ifc",
+    "blender": "4.4.0",
+    "bonsai": "0.9.0-post1-py311",
+    "bounds_m": [
+      [
+        0.9720643758773804,
+        0.0006944999913685024,
+        10.699999809265137
+      ],
+      [
+        41.57210159301758,
+        35.04069519042969,
+        13.25999927520752
+      ]
+    ],
+    "snapshot_reopened_after_ui_sanitization": true,
+    "ui_directory_sanitized": true,
+    "has_blend_warning_after_reopen": true
+  },
+  "blend_bytes": 376210,
+  "blend_sha256": "4e55f633b01ce0ca1af897d0c9945e2c9997f698aec6ce70bedd4ef45799a15c",
+  "preview_bytes": 80369
+}

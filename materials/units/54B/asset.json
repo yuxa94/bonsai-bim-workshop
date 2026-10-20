@@ -1,0 +1,66 @@
+{
+  "id": "54B",
+  "label": "54B 단위세대",
+  "group": "units",
+  "ifc": "materials/units/54B/54B.ifc",
+  "blend": "materials/units/54B/54B.blend",
+  "preview": "materials/units/54B/preview.png",
+  "download": "materials/units/54B/54B.zip",
+  "readme": "materials/units/54B/README.md",
+  "ifc_sha256": "e141b618a2b08278a7ee280275e3d86541aa972ae41b0613ff99bbc7605da9b2",
+  "ifc_bytes": 369747,
+  "source_ifc_sha256": "de9b5f69713eeb43850ea82485096d9d05166610434d828addc2d9b82dd153ec",
+  "byte_identical_to_source": false,
+  "metadata_sanitization": [
+    {
+      "property_value_replaced_with": "sources/54B-v003.dwg"
+    },
+    {
+      "property_value_replaced_with": "provenance/image-map.json"
+    }
+  ],
+  "schema": "IFC4",
+  "product_count": 116,
+  "element_count": 104,
+  "represented_count": 103,
+  "void_feature_count": 10,
+  "storeys": 1,
+  "snapshot_role": "IFC 기반 표시 스냅샷. BIM의 기준 파일은 같은 폴더의 IFC.",
+  "preview_role": "해당 IFC를 Bonsai로 가져온 실제 메시의 평면·입체 투영. 화면 캡처나 원본 CAD가 아님.",
+  "family": "standalone",
+  "type": "54B",
+  "revision": "54B-v002",
+  "source_catalog": "assets/apartment-types/20261019-v1",
+  "limitations": "Review assumptions apply. Window profiles and some fixtures are approximate.",
+  "source_review": "materials/units/54B/source-review.png",
+  "source_review_role": "기존 검토용 Blender 렌더 이미지. 화면 캡처와 구분.",
+  "verification": {
+    "snapshot_reopened": true,
+    "loaded_representations": 103,
+    "mesh_objects": 103,
+    "missing_products": [],
+    "source_unchanged": true,
+    "staged_ifc_unchanged": true,
+    "relative_ifc_link": "54B.ifc",
+    "blender": "4.4.0",
+    "bonsai": "0.9.0-post1-py311",
+    "bounds_m": [
+      [
+        0.0,
+        -0.9990000128746033,
+        -0.25
+      ],
+      [
+        7.340000152587891,
+        8.34000015258789,
+        2.799999952316284
+      ]
+    ],
+    "snapshot_reopened_after_ui_sanitization": true,
+    "ui_directory_sanitized": true,
+    "has_blend_warning_after_reopen": true
+  },
+  "blend_bytes": 332249,
+  "blend_sha256": "41b0835c018f34d5ad663da05d73938c457c761ddb2e4991e6d459464df0d919",
+  "preview_bytes": 70541
+}

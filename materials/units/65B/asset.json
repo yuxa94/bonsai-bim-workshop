@@ -1,0 +1,90 @@
+{
+  "id": "65B",
+  "label": "65B 단위세대",
+  "group": "units",
+  "ifc": "materials/units/65B/65B.ifc",
+  "blend": "materials/units/65B/65B.blend",
+  "preview": "materials/units/65B/preview.png",
+  "download": "materials/units/65B/65B.zip",
+  "readme": "materials/units/65B/README.md",
+  "ifc_sha256": "0ee6fba3333995a9611b40d3455debb2eaf455c0086f512803e390415e0a22d3",
+  "ifc_bytes": 748048,
+  "source_ifc_sha256": "12215f8bd48275dcaef5a1fc97b893b6440c8b7bcd21b4667b921077fb56e05b",
+  "byte_identical_to_source": false,
+  "metadata_sanitization": [
+    {
+      "property_value_replaced_with": "sources/65B-v003.dwg"
+    },
+    {
+      "property_value_replaced_with": "sources/65B-v003.dwg"
+    },
+    {
+      "property_value_replaced_with": "sources/65B-v003.dwg"
+    },
+    {
+      "property_value_replaced_with": "sources/65B-v003.dwg"
+    },
+    {
+      "property_value_replaced_with": "sources/65B-v003.dwg"
+    },
+    {
+      "property_value_replaced_with": "sources/65B-v003.dwg"
+    },
+    {
+      "property_value_replaced_with": "sources/65B-v003.dwg"
+    },
+    {
+      "property_value_replaced_with": "sources/65B-v003.dwg"
+    },
+    {
+      "property_value_replaced_with": "sources/65B-v003.dwg"
+    },
+    {
+      "property_value_replaced_with": "provenance/image-map.json"
+    }
+  ],
+  "schema": "IFC4",
+  "product_count": 143,
+  "element_count": 131,
+  "represented_count": 125,
+  "void_feature_count": 15,
+  "storeys": 1,
+  "snapshot_role": "IFC 기반 표시 스냅샷. BIM의 기준 파일은 같은 폴더의 IFC.",
+  "preview_role": "해당 IFC를 Bonsai로 가져온 실제 메시의 평면·입체 투영. 화면 캡처나 원본 CAD가 아님.",
+  "family": "standalone",
+  "type": "65B",
+  "revision": "65B-v001",
+  "source_catalog": "assets/apartment-types/20261019-v1",
+  "limitations": "Review assumptions apply. Window profiles and some fixtures are approximate.",
+  "source_review": "materials/units/65B/source-review.png",
+  "source_review_role": "기존 검토용 Blender 렌더 이미지. 화면 캡처와 구분.",
+  "verification": {
+    "snapshot_reopened": true,
+    "loaded_representations": 125,
+    "mesh_objects": 125,
+    "missing_products": [],
+    "source_unchanged": true,
+    "staged_ifc_unchanged": true,
+    "relative_ifc_link": "65B.ifc",
+    "blender": "4.4.0",
+    "bonsai": "0.9.0-post1-py311",
+    "bounds_m": [
+      [
+        0.0,
+        0.0,
+        -0.25
+      ],
+      [
+        9.33899974822998,
+        8.699999809265137,
+        2.799999952316284
+      ]
+    ],
+    "snapshot_reopened_after_ui_sanitization": true,
+    "ui_directory_sanitized": true,
+    "has_blend_warning_after_reopen": true
+  },
+  "blend_bytes": 359552,
+  "blend_sha256": "1d01153c3820ae3a827cd3467efba4e9c5756a66cbc7f247b617959a8368f88d",
+  "preview_bytes": 73532
+}

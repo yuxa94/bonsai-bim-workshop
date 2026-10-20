@@ -1,0 +1,59 @@
+{
+  "id": "A32-PH",
+  "label": "A32 옥탑층",
+  "group": "floors",
+  "ifc": "materials/floors/A32-PH/A32-PH.ifc",
+  "blend": "materials/floors/A32-PH/A32-PH.blend",
+  "preview": "materials/floors/A32-PH/preview.png",
+  "download": "materials/floors/A32-PH/A32-PH.zip",
+  "readme": "materials/floors/A32-PH/README.md",
+  "ifc_sha256": "e6eefe23afde631c39efb1936bada8400d5db812c0a25291fa9a1b8cf8ce26e9",
+  "ifc_bytes": 103842,
+  "source_ifc_sha256": "e6eefe23afde631c39efb1936bada8400d5db812c0a25291fa9a1b8cf8ce26e9",
+  "byte_identical_to_source": true,
+  "metadata_sanitization": [],
+  "schema": "IFC4",
+  "product_count": 31,
+  "element_count": 28,
+  "represented_count": 28,
+  "void_feature_count": 0,
+  "storeys": 1,
+  "snapshot_role": "IFC 기반 표시 스냅샷. BIM의 기준 파일은 같은 폴더의 IFC.",
+  "preview_role": "해당 IFC를 Bonsai로 가져온 실제 메시의 평면·입체 투영. 화면 캡처나 원본 CAD가 아님.",
+  "floor": "PH",
+  "elevation_m": 82.6,
+  "unit_count": 0,
+  "revision": "v011",
+  "prototype": "PH",
+  "source_catalog": "output/a32-residential/v011/manifest.json",
+  "limitations": "전층 모델의 해당 층 저장본. GUID·월드 좌표를 보존. 수직 상세·경사·법정면적·법규는 검토 상태.",
+  "verification": {
+    "snapshot_reopened": true,
+    "loaded_representations": 28,
+    "mesh_objects": 28,
+    "missing_products": [],
+    "source_unchanged": true,
+    "staged_ifc_unchanged": true,
+    "relative_ifc_link": "A32-PH.ifc",
+    "blender": "4.4.0",
+    "bonsai": "0.9.0-post1-py311",
+    "bounds_m": [
+      [
+        11.362056732177734,
+        14.490699768066406,
+        82.4000015258789
+      ],
+      [
+        26.36210060119629,
+        28.250999450683594,
+        86.69999694824219
+      ]
+    ],
+    "snapshot_reopened_after_ui_sanitization": true,
+    "ui_directory_sanitized": true,
+    "has_blend_warning_after_reopen": true
+  },
+  "blend_bytes": 136730,
+  "blend_sha256": "3adbd30da8c4f84026d797f18e9ada367188d7f6fb756691b88a612bfc7d0af0",
+  "preview_bytes": 51586
+}

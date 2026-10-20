@@ -1,0 +1,10 @@
+{
+  "archive_contains_only_two_unit_floor_inputs": true,
+  "relocated_cli_success": true,
+  "relocated_object_rows": 75,
+  "relocated_unit_rows": 14,
+  "relocated_tests_passed": 5,
+  "no_project_scripts_or_live_blender_needed": true,
+  "dependency_packages_already_available_in_test_environment": true,
+  "fresh_network_dependency_installation_not_tested": true
+}

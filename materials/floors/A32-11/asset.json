@@ -1,0 +1,59 @@
+{
+  "id": "A32-11",
+  "label": "A32 11층",
+  "group": "floors",
+  "ifc": "materials/floors/A32-11/A32-11.ifc",
+  "blend": "materials/floors/A32-11/A32-11.blend",
+  "preview": "materials/floors/A32-11/preview.png",
+  "download": "materials/floors/A32-11/A32-11.zip",
+  "readme": "materials/floors/A32-11/README.md",
+  "ifc_sha256": "75c8327efd55cb6e83b39600ad05a8ea8127ee3a8c99243b70564bd6d4b08d8b",
+  "ifc_bytes": 5315939,
+  "source_ifc_sha256": "75c8327efd55cb6e83b39600ad05a8ea8127ee3a8c99243b70564bd6d4b08d8b",
+  "byte_identical_to_source": true,
+  "metadata_sanitization": [],
+  "schema": "IFC4",
+  "product_count": 942,
+  "element_count": 925,
+  "represented_count": 925,
+  "void_feature_count": 0,
+  "storeys": 1,
+  "snapshot_role": "IFC 기반 표시 스냅샷. BIM의 기준 파일은 같은 폴더의 IFC.",
+  "preview_role": "해당 IFC를 Bonsai로 가져온 실제 메시의 평면·입체 투영. 화면 캡처나 원본 CAD가 아님.",
+  "floor": "11",
+  "elevation_m": 37.2,
+  "unit_count": 14,
+  "revision": "v011",
+  "prototype": "05-22",
+  "source_catalog": "output/a32-residential/v011/manifest.json",
+  "limitations": "전층 모델의 해당 층 저장본. GUID·월드 좌표를 보존. 수직 상세·경사·법정면적·법규는 검토 상태.",
+  "verification": {
+    "snapshot_reopened": true,
+    "loaded_representations": 925,
+    "mesh_objects": 925,
+    "missing_products": [],
+    "source_unchanged": true,
+    "staged_ifc_unchanged": true,
+    "relative_ifc_link": "A32-11.ifc",
+    "blender": "4.4.0",
+    "bonsai": "0.9.0-post1-py311",
+    "bounds_m": [
+      [
+        1.0220999717712402,
+        0.8707000017166138,
+        37.0
+      ],
+      [
+        41.677101135253906,
+        34.93069839477539,
+        40.26000213623047
+      ]
+    ],
+    "snapshot_reopened_after_ui_sanitization": true,
+    "ui_directory_sanitized": true,
+    "has_blend_warning_after_reopen": true
+  },
+  "blend_bytes": 2486195,
+  "blend_sha256": "fab43e8e82195e51ad2d19a8ea52f8e385a8e1fc984dd8e5a10b1a991bc3b401",
+  "preview_bytes": 113042
+}

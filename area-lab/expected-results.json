@@ -1,0 +1,12 @@
+{
+  "25B": {
+    "floor_xy_union_m2": 30.1908,
+    "space_xy_sum_m2": 23.7256,
+    "basis": "Independent sum of source slab profile polygons"
+  },
+  "A32-05": {
+    "floor_xy_union_m2": 994.5318000000003,
+    "registered_unit_sum_m2": 749.514184708172,
+    "basis": "Previous read-only v011 full-model extraction jobs/a32-area-schedule-v001/areas.json, floor05 only"
+  }
+}

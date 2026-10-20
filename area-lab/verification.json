@@ -1,0 +1,61 @@
+{
+  "tested_on": "2026-10-21",
+  "python": "3.11.11",
+  "ifcopenshell": "0.9.0",
+  "shapely": "2.2.0",
+  "tests_passed": 5,
+  "source_hashes_unchanged": true,
+  "single_storey_inputs": [
+    1,
+    1
+  ],
+  "sources": [
+    {
+      "inputfile": "25B.ifc",
+      "sha256_before": "b1ba21cbb084bfb8ea0a89bae496faeab26b7e86b88f4ce862dc05fcf395d26e",
+      "sha256_after": "b1ba21cbb084bfb8ea0a89bae496faeab26b7e86b88f4ce862dc05fcf395d26e",
+      "source_bytes": 270732,
+      "ifc_schema": "IFC4",
+      "length_scale_to_m": 1.0,
+      "storey_count": 1,
+      "space_count": 5,
+      "represented_spaces": 5,
+      "slab_count": 2,
+      "physical_occurrences": 81,
+      "type_definitions_excluded": 0
+    },
+    {
+      "inputfile": "A32-05.ifc",
+      "sha256_before": "f00eefecaa1b5bac3c4a7b722d84d54ec9e7698c9e696b44d8fa6acd59a6fe6f",
+      "sha256_after": "f00eefecaa1b5bac3c4a7b722d84d54ec9e7698c9e696b44d8fa6acd59a6fe6f",
+      "source_bytes": 5315939,
+      "ifc_schema": "IFC4",
+      "length_scale_to_m": 1.0,
+      "storey_count": 1,
+      "space_count": 14,
+      "represented_spaces": 0,
+      "slab_count": 54,
+      "physical_occurrences": 925,
+      "type_definitions_excluded": 925
+    }
+  ],
+  "saved_xlsx_sheet_count": 4,
+  "saved_xlsx_error_cells": 0,
+  "missing_space_areas_saved_blank": 14,
+  "storey_05_saved_as_text": true,
+  "object_rows": 75,
+  "unit_slab_rows": 14,
+  "values": {
+    "25B_space_projection_sum_m2": 23.7256,
+    "25B_slab_union_m2": 30.1908,
+    "A32-05_floor_union_m2": 994.5318,
+    "A32-05_registered_unit_slabs_m2": 749.5141847081719,
+    "A32-05_outside_registered_units_m2": 245.01761529182826,
+    "A32-05_landing_union_m2": 11.448,
+    "A32_25_drawing_dimension_sum_m2": 20.2034
+  },
+  "xlsx_formula_input_change_and_restore": true,
+  "xlsx_native_excel_recalculation_tested": false,
+  "independent_control": "Prior v011 full-model profile extraction, floor05; source remains read-only",
+  "limits": "Model profile projection and separate drawing worksheet; no statutory area certification; vertical polygonal extrusion only."
+}

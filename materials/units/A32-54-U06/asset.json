@@ -1,0 +1,70 @@
+{
+  "id": "A32-54-U06",
+  "label": "A32 54형 · U06",
+  "group": "units",
+  "ifc": "materials/units/A32-54-U06/A32-54-U06.ifc",
+  "blend": "materials/units/A32-54-U06/A32-54-U06.blend",
+  "preview": "materials/units/A32-54-U06/preview.png",
+  "download": "materials/units/A32-54-U06/A32-54-U06.zip",
+  "readme": "materials/units/A32-54-U06/README.md",
+  "ifc_sha256": "4b4d528a1c5359590abadd23087aad261d728c5f796aba1e4d25e685374a925f",
+  "ifc_bytes": 291537,
+  "source_ifc_sha256": "4b4d528a1c5359590abadd23087aad261d728c5f796aba1e4d25e685374a925f",
+  "byte_identical_to_source": true,
+  "metadata_sanitization": [],
+  "schema": "IFC4",
+  "product_count": 60,
+  "element_count": 57,
+  "represented_count": 57,
+  "void_feature_count": 0,
+  "storeys": 1,
+  "snapshot_role": "IFC 기반 표시 스냅샷. BIM의 기준 파일은 같은 폴더의 IFC.",
+  "preview_role": "해당 IFC를 Bonsai로 가져온 실제 메시의 평면·입체 투영. 화면 캡처나 원본 CAD가 아님.",
+  "family": "a32",
+  "type": "54",
+  "variant": "U06",
+  "revision": "20261020-v002",
+  "source_catalog": "assets/a32-apartment-types/20261020-v002",
+  "source_origin_m": [
+    8.632064420476905,
+    26.500694511632297
+  ],
+  "source_bounds_m": [
+    8.632064420476905,
+    26.500694511632297,
+    15.972064420479,
+    34.84069451163255
+  ],
+  "source_rotation_deg": 0.0,
+  "source_mirror_sx": 1.0,
+  "limitations": "원본에서 보관한 회전·미러·끝벽 조건별 배치형. 검토 가정과 미확정 상세는 원본과 같음.",
+  "verification": {
+    "snapshot_reopened": true,
+    "loaded_representations": 57,
+    "mesh_objects": 57,
+    "missing_products": [],
+    "source_unchanged": true,
+    "staged_ifc_unchanged": true,
+    "relative_ifc_link": "A32-54-U06.ifc",
+    "blender": "4.4.0",
+    "bonsai": "0.9.0-post1-py311",
+    "bounds_m": [
+      [
+        -0.3499999940395355,
+        -0.9989945292472839,
+        -0.20000000298023224
+      ],
+      [
+        7.340000152587891,
+        8.340005874633789,
+        2.799999952316284
+      ]
+    ],
+    "snapshot_reopened_after_ui_sanitization": true,
+    "ui_directory_sanitized": true,
+    "has_blend_warning_after_reopen": true
+  },
+  "blend_bytes": 271108,
+  "blend_sha256": "e43b221944d37739e08d9a6c35b63b95b6a110756dffe850fa28ea40ceb1375c",
+  "preview_bytes": 62161
+}

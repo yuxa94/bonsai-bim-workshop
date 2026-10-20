@@ -1,0 +1,58 @@
+{
+  "drawing": "A17-001",
+  "pdf_page": 31,
+  "type": "A32 25 (not standalone 25B)",
+  "pdf_sha256": "847f5241459b293c07bd2ecc7c3089f98c7d264ff203bae36bcdbe3c5fff9df1",
+  "basis": "Source dimension worksheet; not IFC-space or slab measurement; not statutory certification",
+  "net_zones": [
+    {
+      "room": "거실",
+      "zone": "1",
+      "w": 3.4,
+      "h": 2.53,
+      "area": 8.601999999999999
+    },
+    {
+      "room": "거실",
+      "zone": "2",
+      "w": 3.37,
+      "h": 0.97,
+      "area": 3.2689
+    },
+    {
+      "room": "주방",
+      "zone": "3",
+      "w": 1.88,
+      "h": 0.68,
+      "area": 1.2784
+    },
+    {
+      "room": "주방",
+      "zone": "4",
+      "w": 1.91,
+      "h": 1.12,
+      "area": 2.1392
+    },
+    {
+      "room": "욕실",
+      "zone": "5",
+      "w": 1.42,
+      "h": 1.8,
+      "area": 2.556
+    },
+    {
+      "room": "욕실",
+      "zone": "6",
+      "w": 1.07,
+      "h": 0.57,
+      "area": 0.6099
+    },
+    {
+      "room": "현관",
+      "zone": "7",
+      "w": 1.59,
+      "h": 1.1,
+      "area": 1.7490000000000003
+    }
+  ]
+}

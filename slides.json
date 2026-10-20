@@ -1,0 +1,1375 @@
+[
+  {
+    "part": "WORKSHOP 2026",
+    "time": "240분 · Windows",
+    "title": "DWG에서 시작해\nBIM 작업을 스킬로 남기다",
+    "lead": "설치부터 단위세대, 반복층, 면적산출표까지 직접 만들어 보는 4시간",
+    "kind": "cover",
+    "rows": [],
+    "images": [
+      {
+        "path": "images/25B-result.png",
+        "caption": "25B 실제 IFC 제작 결과"
+      }
+    ],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "Blender 다운로드 완료 상태에서 시작한다. 완성 스킬은 첫 단위세대 제작 후 비교용으로만 제공한다. 전체 동 통합 로드는 하지 않는다."
+  },
+  {
+    "part": "수업 안내",
+    "time": "00–03분",
+    "title": "오늘 따라갈 제작 순서",
+    "lead": "설명 자료를 읽은 뒤 같은 화면의 요청문을 GPT/Codex에 복사합니다.",
+    "kind": "agenda",
+    "rows": [
+      [
+        "00–25",
+        "MCP 연결·설치와 개념 설명"
+      ],
+      [
+        "25–55",
+        "25B DWG에서 첫 단위세대 생성"
+      ],
+      [
+        "55–80",
+        "창·욕실·가구 상세 수정"
+      ],
+      [
+        "80–95",
+        "첫 성공 과정으로 스킬 제작"
+      ],
+      [
+        "95–110",
+        "54B에 만든 스킬 적용"
+      ],
+      [
+        "110–120",
+        "휴식"
+      ],
+      [
+        "120–130",
+        "나머지 유닛 자료 받기"
+      ],
+      [
+        "130–145",
+        "타입·배치형 분리와 재사용"
+      ],
+      [
+        "145–170",
+        "A32 5~23층 DWG에서 기준층 생성"
+      ],
+      [
+        "170–190",
+        "기준층 수정·층 작업 스킬 제작"
+      ],
+      [
+        "190–200",
+        "휴식"
+      ],
+      [
+        "200–220",
+        "다른 층 제작·층별 자료 전달"
+      ],
+      [
+        "220–240",
+        "IFC·Blender 면적산출표 실습"
+      ]
+    ],
+    "images": [],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "다운로드 중 Bonsai와 IfcOpenShell 설명을 함께 진행한다. 휴식 20분을 포함해 240분이다. 생성이 오래 걸리면 본인 작업을 보존하고 해당 단계의 비교본으로 다음 실습을 이어간다."
+  },
+  {
+    "part": "수업 안내",
+    "time": "00–03분",
+    "title": "한 번에 하나의 유닛, 하나의 층",
+    "lead": "실습 폴더에서 연 로컬 GPT/Codex와 Blender MCP를 사용합니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "시작 파일",
+        "다운로드된 Blender. 첫 단계에서 MCP와 Bonsai를 준비합니다."
+      ],
+      [
+        "실습 자료",
+        "각 단계의 DWG·IFC·Blender 링크를 개별 다운로드합니다."
+      ],
+      [
+        "작업 방식",
+        "새 IFC를 만들고 수정한 뒤, 성공한 절차를 스킬로 정리합니다."
+      ],
+      [
+        "4시간 운영",
+        "생성 대기 중 개념 설명·짝 검토. 지연 시 제공 비교본으로 이어갑니다."
+      ]
+    ],
+    "images": [],
+    "links": [
+      {
+        "name": "전체 자료 목록",
+        "path": "downloads.html"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "웹 ChatGPT에 DWG만 첨부하면 Blender가 자동 조작되는 방식과 구분한다. 이 수업은 로컬 파일 접근과 MCP가 연결된 GPT/Codex 환경을 전제로 한다. 강사는 설치 파일 다운로드와 계정 로그인을 사전 점검한다."
+  },
+  {
+    "part": "01 · Blender MCP 연결",
+    "time": "03–12분",
+    "title": "Blender에 대화의 연결 통로를 만듭니다",
+    "lead": "Bonsai 설치 전, 일반 Blender MCP부터 연결합니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "애드온 설치",
+        "uvx mcp-for-blender install-addon"
+      ],
+      [
+        "Blender",
+        "Add-ons에서 활성화 → N 패널 → 서버 시작"
+      ],
+      [
+        "MCP 등록",
+        "codex mcp add blender -- uvx mcp-for-blender"
+      ],
+      [
+        "연결 확인",
+        "앱 재시작 → 다음 확인 프롬프트 실행"
+      ]
+    ],
+    "images": [],
+    "links": [
+      {
+        "name": "따라 하는 연결·설치 안내",
+        "path": "guides/01-connect-and-install.md"
+      },
+      {
+        "name": "공식 MCP 저장소",
+        "path": "https://github.com/ahujasid/mcp-for-blender"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "신규 패키지 이름은 mcp-for-blender다. 예전 blender-mcp 이름은 호환된다. 앱의 연결 설정과 Blender 내 서버 실행이 모두 필요하다. 기존 MCP 서버의 설정을 먼저 확인해 중복 등록을 피한다."
+  },
+  {
+    "part": "01 · Blender MCP 연결",
+    "time": "08–12분",
+    "title": "1A · 지금 열린 Blender를 확인합니다",
+    "lead": "연결 응답과 실제 작업 창을 함께 확인합니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "Blender MCP 연결을 확인해줘.\n실행 중인 Blender 버전, 현재 파일 경로와 장면 이름, 객체 수를 읽어줘.\n앞으로 사용할 창이 맞는지 확인하고 현재 장면은 수정하지 마.",
+    "terms": [
+      [
+        "현재 파일",
+        "이후 작업의 대상 창을 식별합니다."
+      ],
+      [
+        "객체 수",
+        "Blender 화면과 응답을 대조합니다."
+      ]
+    ],
+    "checks": [
+      "Blender 버전이 표시된다.",
+      "MCP 대상 창과 장면이 맞다.",
+      "기존 장면의 객체가 바뀌지 않았다."
+    ],
+    "repair": "Blender MCP가 응답하지 않아. 애드온 활성화, 패널의 서버 시작 상태, Codex MCP 실행 명령과 포트 충돌을 순서대로 확인해줘.",
+    "note": "읽기 확인만 진행한다. 여러 창이 열린 강사 PC에서는 특히 파일 경로와 대상 창을 확인한다."
+  },
+  {
+    "part": "02 · 설치하며 이해하기",
+    "time": "12–25분",
+    "title": "Bonsai 다운로드를 먼저 시작합니다",
+    "lead": "Preferences → Get Extensions → Allow Online Access → Bonsai → Install",
+    "kind": "visual",
+    "rows": [],
+    "images": [
+      {
+        "path": "images/install-bonsai-2.png",
+        "caption": "공식 Bonsai 설치 문서: 온라인 접근 허용"
+      },
+      {
+        "path": "images/install-bonsai-3.png",
+        "caption": "공식 Bonsai 설치 문서: Bonsai 검색·설치"
+      }
+    ],
+    "links": [
+      {
+        "name": "Bonsai 공식 설치 안내",
+        "path": "https://docs.bonsaibim.org/studio/quickstart/installation.html"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "공식 설치 문서의 실제 UI 이미지이며 학생 PC의 실행 캡처가 아니다. 출처: https://docs.bonsaibim.org/studio/quickstart/installation.html · Bonsai / IfcOpenShell Contributors. 검증 모델은 Blender 4.4/Bonsai 0.9.0post1 환경에서 제작했다. 학생 설치는 현재 공식 호환 안내를 따른다. 다운로드 중 다음 두 개념 슬라이드를 설명한다."
+  },
+  {
+    "part": "02 · 설치하며 이해하기",
+    "time": "다운로드 중",
+    "title": "Bonsai는 Blender 안의 BIM 작업 환경입니다",
+    "lead": "벽·문·창을 의미와 관계가 있는 IFC 객체로 편집합니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "Blender 화면",
+        "선택, 회전, 확대와 형상 확인을 담당합니다."
+      ],
+      [
+        "Bonsai 도구",
+        "IFC 프로젝트·층·클래스·속성·재료를 편집합니다."
+      ],
+      [
+        "저장 기준",
+        "Bonsai의 Save IFC로 BIM 데이터를 저장합니다."
+      ]
+    ],
+    "images": [
+      {
+        "path": "images/05-overlay.png",
+        "caption": "실제 A32 5층 IFC와 원본 CAD를 함께 검토한 Blender 화면"
+      }
+    ],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "모든 메시가 BIM 객체인 것은 아니다. 벽은 IfcWall, 문은 IfcDoor 등 클래스와 개구부·층 관계가 필요하다."
+  },
+  {
+    "part": "02 · 설치하며 이해하기",
+    "time": "다운로드 중",
+    "title": "IfcOpenShell은 IFC를 읽고 쓰는 엔진입니다",
+    "lead": "Bonsai는 이 엔진을 사용합니다. 두 프로그램은 같은 역할이 아닙니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "IFC 읽기",
+        "객체의 GUID·클래스·층·속성·관계를 읽습니다."
+      ],
+      [
+        "형상 처리",
+        "벽·슬래브의 형상을 만들고 좌표와 면적을 검사합니다."
+      ],
+      [
+        "Bonsai와 연결",
+        "Bonsai 배포에는 호환 IfcOpenShell이 포함됩니다."
+      ],
+      [
+        "별도 Python",
+        "마지막 면적산출 실습의 별도 Python에는 따로 설치합니다."
+      ]
+    ],
+    "images": [],
+    "links": [
+      {
+        "name": "IfcOpenShell 공식 Python 안내",
+        "path": "https://docs.ifcopenshell.org/ifcopenshell-python/installation.html"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "Blender의 Python과 외부 Python은 별개다. 외부 pip 설치가 Blender 설치 성공을 의미하지 않는다. Bonsai 포함본을 임의로 pip로 덮어쓰지 않는다."
+  },
+  {
+    "part": "02 · 설치 확인",
+    "time": "20–25분",
+    "title": "2A · Bonsai와 IfcOpenShell을 확인합니다",
+    "lead": "실제로 Blender 안에서 import와 IFC 도구 사용이 가능한지 검사합니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "현재 Blender에 Bonsai가 설치·활성화됐는지 확인해줘.\nBlender 안의 Python에서 bpy, bonsai, ifcopenshell을 불러오고 각 버전과 모듈 경로를 알려줘.\n외부 Python의 설치 상태와 구분해서 보고하고 빈 IFC 프로젝트를 만들 준비만 확인해줘.",
+    "terms": [
+      [
+        "Blender Python",
+        "Bonsai가 실제로 실행되는 환경입니다."
+      ],
+      [
+        "모듈 경로",
+        "다른 Python을 검사하는 실수를 찾습니다."
+      ]
+    ],
+    "checks": [
+      "Bonsai가 활성화돼 있다.",
+      "Blender 안에서 ifcopenshell import가 된다.",
+      "세 모듈의 버전·경로가 확인된다."
+    ],
+    "repair": "외부 Python에서는 되는데 Blender에서 ifcopenshell을 못 찾아. Blender 내부 sys.executable과 확장 경로를 확인하고 공식 Bonsai 호환 설치부터 고쳐줘.",
+    "note": "설치가 늦는 사람은 개념 설명과 도면 해석에 참여하고 모델링 실행 전까지 짝과 함께 진행한다."
+  },
+  {
+    "part": "03 · 첫 단위세대",
+    "time": "25–30분",
+    "title": "첫 입력은 25B DWG 한 개입니다",
+    "lead": "다운로드한 도면을 GPT/Codex에 전달하고 해석부터 요청합니다.",
+    "kind": "visual",
+    "rows": [],
+    "images": [
+      {
+        "path": "images/25B-input.png",
+        "caption": "입력: 치수·문자가 포함된 실제 25B 원본 도면"
+      }
+    ],
+    "links": [
+      {
+        "name": "25B-v003.dwg 다운로드",
+        "path": "sources/25B-v003.dwg"
+      },
+      {
+        "name": "DWG 읽기 보조 DXF",
+        "path": "sources/25B-reference.dxf"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "첫 과정에서는 완성 스킬을 설치하지 않는다. DWG는 학생 실습 폴더에 내려받는다. AutoCAD가 없으면 같은 원본의 보조 DXF를 사용할 수 있다."
+  },
+  {
+    "part": "03 · 첫 단위세대",
+    "time": "30–35분",
+    "title": "3A · 바로 만들기 전에 도면을 읽습니다",
+    "lead": "실명·단위·원점·높이의 근거를 먼저 확인합니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "아래 DWG를 내 실습 폴더에 다운로드하고 원본을 보존해줘.\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/25B-v003.dwg\nDWG를 직접 읽을 수 없는 환경이면 같은 원본의 보조 DXF를 사용해줘.\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/25B-reference.dxf\n실명, 벽·문·창·가구, 좌표 단위와 원점, FL/SL 표기를 조사해줘. 아직 BIM을 생성하지 말고 관측값과 확인이 필요한 높이를 정리해줘.",
+    "terms": [
+      [
+        "DWG·DXF",
+        "실습 입력 파일입니다. 인터넷의 링크를 실제 로컬 파일로 내려받습니다."
+      ],
+      [
+        "미표기 높이",
+        "도면에서 읽은 값과 검토값을 분리합니다."
+      ]
+    ],
+    "checks": [
+      "원본 파일을 다운받았다.",
+      "단위와 좌표 원점을 확인했다.",
+      "미표기 높이를 따로 정리했다."
+    ],
+    "repair": "파일을 못 읽겠어. DWG 지원 도구가 있는지 확인하고, 없으면 제공 DXF의 실제 엔티티·문자·치수로 조사해줘.",
+    "note": "직접 해석이 목표다. 답안 IFC는 아직 열지 않는다. GPT 도구가 DWG를 실제로 지원하는지 확인한다."
+  },
+  {
+    "part": "03 · 첫 단위세대",
+    "time": "35–50분",
+    "title": "3B · 25B를 새 IFC로 만듭니다",
+    "lead": "첫 생성에서는 벽·슬래브·문·창·공간의 전체 구성을 확인합니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "방금 읽은 25B 도면을 기준으로 새 IFC를 만들고 별도 Blender 작업 창에서 열어줘.\n도면의 좌표·회전·FL/SL을 유지하고 벽·슬래브·문·창·공간을 적절한 IFC 클래스로 작성해줘.\n수업용 검토값은 벽 2800mm, 슬래브 200mm, 미표기 창대 900mm로 적용하되 도면에 다른 표기가 있으면 그 표기를 우선하고 충돌을 알려줘.\n현재 창과 원본은 유지하고 work/25B-v001.ifc처럼 새 파일로 저장해줘.",
+    "terms": [
+      [
+        "검토값",
+        "이 수업의 25B 예제에만 적용합니다."
+      ],
+      [
+        "새 IFC",
+        "원본 DWG와 기존 작업을 보존합니다."
+      ]
+    ],
+    "checks": [
+      "한 단위세대의 벽·문·창이 생성됐다.",
+      "원본과 같은 원점·단위다.",
+      "저장된 새 IFC를 다시 열 수 있다."
+    ],
+    "repair": "형상이 도면에서 멀리 떨어졌어. mm→m, 원점 차감, OCS→WCS와 미러 변환부터 확인하고 새 버전으로 수정해줘.",
+    "note": "첫 생성 시간은 15분이다. 생성 대기가 길면 진행 파일을 저장하고 비교 IFC로 상세 질문을 이어간다. 검토값을 법정·공통 설계 기준으로 부르지 않는다."
+  },
+  {
+    "part": "03 · 첫 단위세대",
+    "time": "50–55분",
+    "title": "평면과 입체를 함께 확인합니다",
+    "lead": "이미지는 앞선 실제 제작 결과입니다. 자신의 생성 결과와 비교합니다.",
+    "kind": "visual",
+    "rows": [],
+    "images": [
+      {
+        "path": "images/25B-result.png",
+        "caption": "결과: 25B 실제 IFC 검토 모델"
+      },
+      {
+        "path": "images/25B-overlay.png",
+        "caption": "원본 도면과 모델의 좌표 대조"
+      }
+    ],
+    "links": [
+      {
+        "name": "지연 시 25B 비교 IFC",
+        "path": "materials/units/25B/25B.ifc"
+      },
+      {
+        "name": "25B Blender 스냅샷",
+        "path": "materials/units/25B/25B.blend"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "제공 이미지가 학생의 실행 성공을 증명하지는 않는다. 원본과 다른 점 3개를 찾아 다음 수정 요청으로 연결한다."
+  },
+  {
+    "part": "04 · 상세를 잡아가기",
+    "time": "55–62분",
+    "title": "창틀 두 열과 유리의 수를 봅니다",
+    "lead": "WIN03은 120mm씩 두 열, 총깊이 240mm의 검토 형상입니다.",
+    "kind": "visual",
+    "rows": [
+      [
+        "확인",
+        "두 열 창틀·창짝 4개·프레임 깊이"
+      ],
+      [
+        "구분",
+        "두 열 창틀과 복층유리는 다른 구성입니다."
+      ]
+    ],
+    "images": [
+      {
+        "path": "images/window-detail.png",
+        "caption": "실제 WIN03 두 열 창틀 상세"
+      }
+    ],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "표시용 유리와 프레임 단면은 제작 상세의 승인값이 아니다. 실제 오류와 정정 과정을 설명하는 사례로 사용한다."
+  },
+  {
+    "part": "04 · 상세를 잡아가기",
+    "time": "62–68분",
+    "title": "욕실은 유리 구획과 문을 구분합니다",
+    "lead": "고정판·문짝·문 방향·높이를 원본과 대조합니다.",
+    "kind": "visual",
+    "rows": [
+      [
+        "기준",
+        "샤워 구획 높이 2100mm, 이 예제의 FL+60에서 시작"
+      ],
+      [
+        "추가 확인",
+        "문 회전호·고정판·손잡이·위생기구 위치"
+      ]
+    ],
+    "images": [
+      {
+        "path": "images/shower-detail.png",
+        "caption": "실제 샤워 유리 구획과 문 상세"
+      }
+    ],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "이 슬라이드까지 학습자는 적어도 두 상세 문제를 자연어로 구체화한다."
+  },
+  {
+    "part": "04 · 상세를 잡아가기",
+    "time": "68–76분",
+    "title": "4A · 부족한 상세만 골라 수정합니다",
+    "lead": "한 요청에 수정 대상·근거·보존 범위·새 결과를 함께 적습니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "현재 25B IFC에서 원본과 비교해 WIN03, 샤워 구획, 가구 누락을 점검해줘.\nWIN03은 창틀 두 열(각 120mm, 총 240mm)과 창짝 4개를, 샤워 구획은 유리 고정판+문과 높이 2100mm를 확인해줘.\n하부장 850mm·식탁 750mm·수납 2200mm는 이번 예제의 검토값으로 사용해줘. 누락 가구는 적절한 IFC 클래스로 작성해줘.\n대상 외 GUID와 형상을 보존하고 work/25B-v002.ifc로 저장한 뒤 평면·입체로 대조해줘.",
+    "terms": [
+      [
+        "구체적인 대상",
+        "창 이름과 변경할 형상을 지정합니다."
+      ],
+      [
+        "보존 범위",
+        "수정하지 않은 객체를 다시 만들지 않습니다."
+      ]
+    ],
+    "checks": [
+      "두 열·창짝 수를 직접 확인했다.",
+      "욕실 구획·가구가 IFC 객체다.",
+      "수정 전후를 비교한 새 버전이 있다."
+    ],
+    "repair": "색만 바뀌고 실제 형상이 같아. 객체 이름 대신 실제 프레임·유리·고정판의 형상과 IFC 저장본을 확인해줘.",
+    "note": "수정 5분·짝 검토 3분으로 진행한다. 전부 완성하지 못해도 직접 발견한 문제 하나의 정정 근거를 남긴다."
+  },
+  {
+    "part": "04 · 상세를 잡아가기",
+    "time": "76–80분",
+    "title": "잘 된 요청의 조건을 기록합니다",
+    "lead": "다음 도면에서도 반복할 수 있는 절차를 골라냅니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "입력",
+        "DWG 파일·단위·원점·레벨을 조사했습니다."
+      ],
+      [
+        "생성",
+        "클래스와 공간 소속을 정해 IFC를 만들었습니다."
+      ],
+      [
+        "수정",
+        "창·가구·욕실을 실제 기하로 확인했습니다."
+      ],
+      [
+        "검증",
+        "새 IFC 저장·재열기와 원본 대조를 했습니다."
+      ]
+    ],
+    "images": [],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "설계 숫자 전체를 외우는 스킬보다 실패를 예방하는 절차를 기록한다."
+  },
+  {
+    "part": "05 · 나의 첫 BIM 스킬",
+    "time": "80–84분",
+    "title": "성공한 과정을 스킬로 정리합니다",
+    "lead": "첫 모델을 만든 뒤에 작성 규칙을 추출합니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "SKILL.md",
+        "언제 이 스킬을 쓸지, 어떤 순서와 검사를 따를지 적습니다."
+      ],
+      [
+        "재사용할 규칙",
+        "원점·단위·클래스·원본 대조·새 버전 저장"
+      ],
+      [
+        "예제로 남길 값",
+        "25B의 벽 높이와 창 상세. 다른 도면의 자동 기본값으로 쓰지 않습니다."
+      ]
+    ],
+    "images": [],
+    "links": [
+      {
+        "name": "작성할 스킬 뼈대",
+        "path": "skill-kits/starter/unit-bim/SKILL.md"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "완성 예시를 처음부터 설치하지 않는다. 자신의 첫 성공 기록에서 스킬을 만드는 과정이 교육의 핵심이다."
+  },
+  {
+    "part": "05 · 나의 첫 BIM 스킬",
+    "time": "84–95분",
+    "title": "5A · 첫 모델의 작업 절차를 저장합니다",
+    "lead": "자신이 적용한 수정과 확인 방법을 스킬에 포함합니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [
+      {
+        "name": "작성 후 비교용 완성 예시",
+        "path": "skill-kits/completed/unit-bim/SKILL.md"
+      }
+    ],
+    "prompt": "지금 25B를 만들고 상세를 수정하면서 성공한 절차를 재사용 스킬로 만들어줘.\n내 실습 폴더의 skills/unit-bim/SKILL.md에 사용 조건, 도면 조사, IFC 생성, 상세 보완, 검증, 새 버전 저장 순서를 적어줘.\n원점·단위·FL/SL 확인과 두 열 창틀·가구·샤워문 점검을 포함하고 25B의 승인값은 예제 참조로 분리해줘.\n없는 도구나 실행하지 않은 검증을 성공했다고 적지 말고 다음 54B 도면에 쓸 수 있게 정리해줘.",
+    "terms": [
+      [
+        "사용 조건",
+        "어떤 작업에서 스킬을 읽을지 적습니다."
+      ],
+      [
+        "참조로 분리",
+        "한 도면의 높이를 모든 프로젝트에 강제하지 않습니다."
+      ]
+    ],
+    "checks": [
+      "실제 SKILL.md 파일이 있다.",
+      "반복할 절차와 25B 전용값이 나뉜다.",
+      "검증·복구 방법이 들어 있다."
+    ],
+    "repair": "스킬이 너무 길고 25B 숫자만 나열돼 있어. 다른 도면에도 필요한 절차만 본문에 남기고 25B 값은 참조로 옮겨줘.",
+    "note": "직접 작성한 파일을 열어 존재를 확인한다. 완성 예시는 참고 자료이며 학생 작성본을 대신하지 않는다."
+  },
+  {
+    "part": "06 · 두 번째 단위세대",
+    "time": "95–100분",
+    "title": "54B DWG에 방금 만든 스킬을 적용합니다",
+    "lead": "새 도면은 폭·원점·방 구성이 다릅니다.",
+    "kind": "visual",
+    "rows": [],
+    "images": [
+      {
+        "path": "images/54B-input.png",
+        "caption": "입력: 실제 54B 원본 도면"
+      }
+    ],
+    "links": [
+      {
+        "name": "54B-v003.dwg 다운로드",
+        "path": "sources/54B-v003.dwg"
+      },
+      {
+        "name": "54B 보조 DXF",
+        "path": "sources/54B-reference.dxf"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "25B를 비균등 확대해 54B로 만드는 실습이 아니다. 새 도면의 실명과 구성을 읽는다."
+  },
+  {
+    "part": "06 · 두 번째 단위세대",
+    "time": "100–110분",
+    "title": "6A · 스킬을 읽고 54B를 만듭니다",
+    "lead": "두 번째 모델은 스킬의 재사용성을 확인하는 시험입니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [
+      {
+        "name": "54B 지연 시 비교 IFC",
+        "path": "materials/units/54B/54B.ifc"
+      }
+    ],
+    "prompt": "내가 만든 skills/unit-bim/SKILL.md를 읽고 아래 54B 도면에 적용해줘.\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/54B-v003.dwg\n보조 DXF: https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/54B-reference.dxf\n54B의 단위·원점·벽·문창·가구·FL/SL을 새로 조사해줘. 이번 54B 실습의 미표기 높이는 벽 2800mm·슬래브 200mm, 충돌 없는 창대만 900mm를 검토 조건으로 적용하고 범위를 기록해줘.\n25B 창을 유지하고 새 54B IFC를 별도 창에서 열어줘. 스킬의 개선점도 알려줘.",
+    "terms": [
+      [
+        "스킬 적용",
+        "스킬의 절차를 따르며 새 도면을 조사합니다."
+      ],
+      [
+        "별도 창",
+        "두 모델을 비교할 수 있게 유지합니다."
+      ]
+    ],
+    "checks": [
+      "54B의 원점과 치수를 다시 읽었다.",
+      "25B와 다른 실 구성이 생겼다.",
+      "스킬의 부족한 항목을 찾았다."
+    ],
+    "repair": "54B가 25B를 늘린 것처럼 나왔어. 원본 54B의 실명·개구부·가구 위치를 다시 읽고 확대 복사 대신 새 IFC로 작성해줘.",
+    "note": "실행 시간은 10분이다. 긴 모델링은 설명 중 진행하고 단계 끝에 제공 비교본으로 검토를 이어간다. 검토값은 이번 54B 실습에만 적용한다."
+  },
+  {
+    "part": "06 · 두 번째 단위세대",
+    "time": "결과 확인",
+    "title": "스킬 적용 전후를 비교합니다",
+    "lead": "54B의 실제 결과와 자신의 모델을 나란히 봅니다.",
+    "kind": "visual",
+    "rows": [],
+    "images": [
+      {
+        "path": "images/54B-result.png",
+        "caption": "결과: 54B 실제 모델, 25B와 별도 IFC"
+      }
+    ],
+    "links": [
+      {
+        "name": "54B IFC·Blender 묶음",
+        "path": "materials/units/54B/54B.zip"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "이번 단계에서는 스킬을 쓰지 않은 첫 작업보다 반복 질문이 줄었는지 설명할 수 있어야 한다."
+  },
+  {
+    "part": "휴식",
+    "time": "110–120분",
+    "title": "10분 쉬어갑니다",
+    "lead": "25B·54B IFC와 직접 만든 SKILL.md의 경로를 기록해 두세요.",
+    "kind": "break",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "강사는 다운로드·설치 지연자를 도와 다음 단계에 합류시킨다."
+  },
+  {
+    "part": "07 · 나머지 유닛 받기",
+    "time": "120–130분",
+    "title": "나머지 타입은 제공 자료를 사용합니다",
+    "lead": "유닛을 전부 다시 만드는 대신 재사용 구조를 살펴봅니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "단독 단위세대",
+        "25B·54B·65B·84AB 4종"
+      ],
+      [
+        "A32 배치형",
+        "6설계타입의 방향·미러·외벽 조건을 보존한 14배치형"
+      ],
+      [
+        "다운로드",
+        "각 유닛의 IFC·Blender·이미지를 개별로 받습니다."
+      ]
+    ],
+    "images": [],
+    "links": [
+      {
+        "name": "유닛별 다운로드 선택",
+        "path": "downloads.html#units"
+      },
+      {
+        "name": "기계가 읽는 카탈로그",
+        "path": "materials/catalog.json"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "독립 단위세대 4타입과 A32의 6타입은 별도 보관함이다. 임의로 대체하지 않는다. 저장소 전체 ZIP을 필수 다운로드로 안내하지 않는다."
+  },
+  {
+    "part": "08 · IFC 타입 재사용",
+    "time": "130–135분",
+    "title": "세대 이름과 실제 반복 부재를 구분합니다",
+    "lead": "세대별 IFC를 처리 단위로 두고 반복 형상은 타입·매핑으로 공유합니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "유닛 파일",
+        "한 세대의 벽·문·창·가구와 관계를 보관합니다."
+      ],
+      [
+        "배치형",
+        "같은 평형도 미러·현관·외벽 조건이 다르면 구분합니다."
+      ],
+      [
+        "반복 부재",
+        "IfcTypeObject와 RepresentationMap/MappedItem을 확인합니다."
+      ],
+      [
+        "반복 인스턴스",
+        "형상을 공유해도 각 발생 객체는 고유 GUID를 가집니다."
+      ]
+    ],
+    "images": [],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "외부 파일의 자동 동기화와 파일 안의 형상 매핑을 구분한다. 반복 유닛의 부모/자식·개구부 관계를 보존한다."
+  },
+  {
+    "part": "08 · IFC 타입 재사용",
+    "time": "135–145분",
+    "title": "8A · 유닛을 처리 가능한 목록으로 정리합니다",
+    "lead": "카탈로그로 타입·배치형·원점·변환을 확인합니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "아래 카탈로그에서 A32의 6설계타입·14배치형을 조사해줘.\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/materials/catalog.json\n전체 모델 대신 필요한 유닛 IFC 1~2개만 내려받아줘. 세대 파일과 실제 IfcTypeObject·MappedItem을 구분하고 원점·미러·회전·GUID·개구부 관계를 표로 정리해줘.\n새 발생 객체는 새 GUID를 부여하고 반복 형상은 매핑으로 공유할 계획을 세워줘. 원본 보관본은 유지해줘.",
+    "terms": [
+      [
+        "14배치형",
+        "같은 평형의 방향·미러 차이를 보존한 목록입니다."
+      ],
+      [
+        "형상 공유",
+        "같은 형상을 부재마다 중복 저장하지 않는 방식입니다."
+      ]
+    ],
+    "checks": [
+      "독립 4타입과 A32 목록을 구분했다.",
+      "배치형·GUID·매핑을 확인했다.",
+      "필요한 파일만 열었다."
+    ],
+    "repair": "같은 평형이라며 미러 유닛을 합쳤어. 카탈로그의 배치형과 실제 현관·외벽 조건을 다시 확인하고 분리해줘.",
+    "note": "15분 동안 한 타입의 두 배치형을 비교한다. 14개를 모두 동시에 로드하지 않는다."
+  },
+  {
+    "part": "09 · A32 기준층",
+    "time": "145–150분",
+    "title": "기준층 입력은 A32-5-23F.dwg입니다",
+    "lead": "「Blender에서 3D 모델 만들기」에서 사용한 원본입니다.",
+    "kind": "visual",
+    "rows": [],
+    "images": [
+      {
+        "path": "images/05-input.png",
+        "caption": "입력: A32 5~23층 원본 CAD의 문자·치수 포함 렌더"
+      }
+    ],
+    "links": [
+      {
+        "name": "A32-5-23F.dwg 다운로드",
+        "path": "sources/A32-5-23F.dwg"
+      },
+      {
+        "name": "층고 확인용 동단면 DWG",
+        "path": "sources/A32-sections.dwg"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "이전 교육의 임의 2세대 배치 예제 대신 실제 기준층의 14세대와 코어를 읽는다."
+  },
+  {
+    "part": "09 · A32 기준층",
+    "time": "150–155분",
+    "title": "9A · 기준층의 배치와 코어를 읽습니다",
+    "lead": "중첩 블록·미러·공용부와 높이 근거를 먼저 조사합니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "아래 A32 기준층과 동단면 DWG를 내려받아 조사해줘.\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/A32-5-23F.dwg\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/A32-sections.dwg\n14세대의 타입·회전·미러·위치와 코어·복도·계단·승강기·샤프트를 목록으로 만들어줘. A32 유닛 카탈로그와 대응시키고 실제 단면 치수로 5층 표고와 반복층 간격을 확인해줘. 아직 19개 층을 통합 생성하지 마.",
+    "terms": [
+      [
+        "중첩·미러",
+        "블록 발생 객체의 변환을 확인합니다."
+      ],
+      [
+        "층고",
+        "단면의 치수 사슬을 사용합니다."
+      ]
+    ],
+    "checks": [
+      "14세대와 공용부를 구분했다.",
+      "배치형 대응을 확인했다.",
+      "층고·표고의 근거가 있다."
+    ],
+    "repair": "블록 핸들이 같다며 세대가 빠졌어. 중첩 INSERT 경로·미러 변환·클립 범위로 발생 객체를 다시 식별해줘.",
+    "note": "A32 일반층 간격 3m는 이 도면의 관측값이며 다른 프로젝트의 기본값이 아니다."
+  },
+  {
+    "part": "09 · A32 기준층",
+    "time": "155–170분",
+    "title": "9B · 먼저 5층 한 개를 만듭니다",
+    "lead": "기존 유닛과 공용부를 원본 위치에 배치해 검토합니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [
+      {
+        "name": "기준층 지연 시 비교 IFC",
+        "path": "materials/floors/A32-05/A32-05.ifc"
+      }
+    ],
+    "prompt": "앞서 읽은 A32 기준층으로 5층 한 개만 새 IFC로 작성해줘. 유닛 목록:\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/materials/catalog.json\n14세대는 해당 A32 배치형의 원래 크기·미러·방향으로 재사용하고 코어·복도·계단·문창·샤프트는 원본 도면으로 작성해줘. 단면의 5층 표고를 한 번만 적용해줘.\nwork/A32-05-v001.ifc로 저장해 새 Blender 창에서 원본과 대조해줘. 전체 동이나 19층을 한 장면에 쌓지 마.",
+    "terms": [
+      [
+        "한 층 우선",
+        "실제 형상과 연결을 확인한 뒤 반복합니다."
+      ],
+      [
+        "A32 배치형",
+        "기존 독립 4타입을 자동 대입하지 않습니다."
+      ]
+    ],
+    "checks": [
+      "5층에 14세대와 코어가 있다.",
+      "세대 크기·방향·미러가 원본과 맞다.",
+      "한 층 IFC만 열려 있다."
+    ],
+    "repair": "유닛이 도면 밖으로 밀렸어. 단위·기준점·카탈로그 배치 행렬과 층 표고의 중복 적용 여부를 확인해줘.",
+    "note": "생성 시간은 15분이다. 비교 파일은 다음 검토 단계로 넘어가기 위한 자료다. 본인 작업을 지우거나 비교본을 직접 생성한 성공으로 보고하지 않는다."
+  },
+  {
+    "part": "09 · A32 기준층",
+    "time": "결과 확인",
+    "title": "기준층은 원본 도면과 겹쳐 봅니다",
+    "lead": "평면에서 위치를, 입체에서 높이와 개구부를 확인합니다.",
+    "kind": "visual",
+    "rows": [],
+    "images": [
+      {
+        "path": "images/05-overlay.png",
+        "caption": "실제 Blender: A32 5층과 원본 도면 겹치기"
+      },
+      {
+        "path": "materials/floors/A32-05/preview.png",
+        "caption": "v011 5층 IFC를 Bonsai로 읽어 만든 형상 검토 이미지"
+      }
+    ],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "화면 캡처와 IFC 메시 투영 이미지를 구분해 표시한다. 전체 동을 내려받지 않고 한 층으로 검토한다."
+  },
+  {
+    "part": "10 · 기준층 상세 수정",
+    "time": "170–175분",
+    "title": "계단과 문 위 벽을 한 곳씩 수정합니다",
+    "lead": "도면 근거와 수정된 실제 형상을 나란히 봅니다.",
+    "kind": "visual",
+    "rows": [],
+    "images": [
+      {
+        "path": "images/stairs-input.png",
+        "caption": "원본 계단·UP/DN·계단참 도면"
+      },
+      {
+        "path": "images/stairs-result.png",
+        "caption": "실제 Blender에서 계단과 주변 상세를 검토한 화면"
+      }
+    ],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "계단의 압출 Depth가 수직 높이가 아닐 수 있다. 횡방향 압출이면 폭일 수 있으므로 월드 하단·상단을 확인한다."
+  },
+  {
+    "part": "10 · 기준층 상세 수정",
+    "time": "175–181분",
+    "title": "10A · 한 곳씩 고치고 다시 저장합니다",
+    "lead": "완성된 모델도 원본 대조를 통해 수정합니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "현재 A32-05 IFC에서 원본과 다른 부분을 한 곳씩 검토해줘.\n계단 UP/DN·계단참·문틀·문 상부 벽·단열재·샤프트·창 주변에서 근거가 있는 항목만 수정해줘. 계단은 월드 하단·상단·참 표고로 확인해줘.\n대상 외 GUID·배치·형상·개구부 관계를 유지하고 work/A32-05-v002.ifc로 저장해줘. 수정 전후 캡처와 변경 목록을 남겨줘.",
+    "terms": [
+      [
+        "한 곳씩",
+        "수정과 검증의 범위를 좁힙니다."
+      ],
+      [
+        "변경 목록",
+        "후속 스킬에 남길 실제 해결 방법입니다."
+      ]
+    ],
+    "checks": [
+      "원본에 근거한 수정 1개 이상",
+      "수정 전후 IFC와 캡처 보관",
+      "범위 밖 부재 보존 확인"
+    ],
+    "repair": "계단 높이를 고쳤더니 폭이 바뀌었어. 압출 방향과 단면 좌표를 읽고 월드 표고로 높이를 검사해줘.",
+    "note": "6분 안에 문제 하나의 수정 근거와 범위 밖 보존을 확인한다. 전체 층의 상세를 모두 끝냈다고 확대하지 않는다."
+  },
+  {
+    "part": "11 · 층 작업 스킬",
+    "time": "181–190분",
+    "title": "11A · 수정 과정을 층 작업 스킬로 만듭니다",
+    "lead": "다른 층에서도 다시 쓸 도면 해석·검증 절차입니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [
+      {
+        "name": "층 스킬 뼈대",
+        "path": "skill-kits/starter/floor-bim/SKILL.md"
+      },
+      {
+        "name": "작성 후 비교용 예시",
+        "path": "skill-kits/completed/floor-bim/SKILL.md"
+      }
+    ],
+    "prompt": "방금 A32 기준층을 만들고 수정한 과정으로 skills/floor-bim/SKILL.md를 작성해줘.\n유닛 배치형 대응, 중첩 블록·미러·클립, 공용부·계단·개구부, 층고 근거, GUID·매핑, 원본 대조, 새 버전 저장 검사를 포함해줘.\n층별 예외를 분리하고 5~23층의 반복부와 24층처럼 다른 구성을 구별해줘. 본문에 기존 프로젝트의 절대 경로·PID를 고정하지 마.",
+    "terms": [
+      [
+        "층별 예외",
+        "한 층의 수정을 다른 층에 일괄 적용하지 않습니다."
+      ],
+      [
+        "완성 예시",
+        "자기 스킬을 작성한 뒤 비교합니다."
+      ]
+    ],
+    "checks": [
+      "floor-bim/SKILL.md가 있다.",
+      "반복부와 층별 예외가 구분된다.",
+      "다른 층의 입력·검사가 정리됐다."
+    ],
+    "repair": "스킬이 5층 파일을 그대로 복사하라고만 해. 다른 층 도면의 공용부·테라스·레벨 차이를 확인하는 절차로 고쳐줘.",
+    "note": "9분 동안 기준층 검증과 반복 출력 요청을 마무리한다. 다음 휴식 시간에 생성 작업을 이어갈 수 있다."
+  },
+  {
+    "part": "11 · 반복층 출력",
+    "time": "190분 직전",
+    "title": "5~23층은 19개 파일로 나눕니다",
+    "lead": "한 장면에 모두 쌓는 대신, 같은 기준층을 표고별 IFC로 출력합니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "검토한 기준층으로 5층부터 23층까지 19개 IFC를 각각 저장해줘. 일반층 간격은 이번 A32 단면의 치수를 사용해줘.\n한 파일에 한 층만 두고 해당 층의 표고와 고유 발생 GUID를 부여해줘. 반복 형상은 타입·매핑으로 공유하고 개구부·문창·재료 관계를 유지해줘.\n모든 층을 Blender 한 장면에 로드하지 말고 5층과 6층을 번갈아 열어 표고·GUID·형상을 표본 검사해줘.",
+    "terms": [
+      [
+        "19개 파일",
+        "5~23을 양끝 포함해 셉니다."
+      ],
+      [
+        "표본검사",
+        "출력 파일은 모두 검사하고 화면은 필요한 층만 봅니다."
+      ]
+    ],
+    "checks": [
+      "층별 파일명이 분리됐다.",
+      "층마다 표고·GUID가 맞다.",
+      "전체 동을 동시에 열지 않았다."
+    ],
+    "repair": "각 층의 높이가 두 배가 됐어. 층 Elevation과 부재 ObjectPlacement에 같은 표고를 중복 적용했는지 확인해줘.",
+    "note": "생성 대기는 휴식 중 진행할 수 있다. 학생 PC 자원이 부족하면 카탈로그의 개별 5·6층 결과를 받아 비교한다."
+  },
+  {
+    "part": "휴식",
+    "time": "190–200분",
+    "title": "10분 쉬어갑니다",
+    "lead": "기준층 수정본과 floor-bim 스킬을 저장합니다.",
+    "kind": "break",
+    "rows": [],
+    "images": [],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "휴식 후 다른 층 도면에 스킬을 적용하고 전체 동 대신 층별 파일로 결과를 받는다."
+  },
+  {
+    "part": "12 · 다른 층에 적용",
+    "time": "200–204분",
+    "title": "다른 층은 해당 DWG를 다시 읽습니다",
+    "lead": "24층은 기준층 14세대를 그대로 복사할 수 없습니다.",
+    "kind": "visual",
+    "rows": [],
+    "images": [
+      {
+        "path": "images/24-input.png",
+        "caption": "입력: 24층 실제 원본 도면"
+      }
+    ],
+    "links": [
+      {
+        "name": "A32 전 층 원본 동평면 DWG",
+        "path": "sources/A32-all-plans.dwg"
+      },
+      {
+        "name": "동단면 DWG",
+        "path": "sources/A32-sections.dwg"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "24층은 5세대·테라스·공용부 차이가 있다. 원본 DWG에는 여러 도면이 포함되므로 24층 영역을 선택한다."
+  },
+  {
+    "part": "12 · 다른 층에 적용",
+    "time": "204–213분",
+    "title": "12A · 층 스킬로 24층을 만듭니다",
+    "lead": "필요한 유닛만 가져오고 달라진 공용부를 작성합니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [
+      {
+        "name": "24층 지연 시 비교 IFC",
+        "path": "materials/floors/A32-24/A32-24.ifc"
+      }
+    ],
+    "prompt": "내 skills/floor-bim/SKILL.md를 읽고 아래 DWG의 24층에 적용해줘.\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/A32-all-plans.dwg\n단면: https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/sources/A32-sections.dwg\n유닛: https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/materials/catalog.json\n24층의 5세대·테라스·공용부·문창·레벨을 새로 조사하고 검증한 A32 유닛만 재사용해줘. 5층을 그대로 복사하지 마. work/A32-24-v001.ifc로 저장하고 원본과 대조해줘.",
+    "terms": [
+      [
+        "스킬 재사용",
+        "절차를 반복하며 다른 구성을 읽습니다."
+      ],
+      [
+        "24층 예외",
+        "세대수·층고·테라스가 다릅니다."
+      ]
+    ],
+    "checks": [
+      "5세대 구성을 확인했다.",
+      "테라스·공용부를 다시 읽었다.",
+      "24층 단독 IFC를 검토했다."
+    ],
+    "repair": "24층에도 14세대가 남아 있어. 원본 24층 영역과 타입 대응을 다시 읽고 다른 층의 복사본을 제거해줘.",
+    "note": "생성 시간은 9분이다. 시간이 길면 제공 비교본으로 5층과 24층의 차이를 확인한다."
+  },
+  {
+    "part": "12 · 다른 층에 적용",
+    "time": "213–215분",
+    "title": "완성된 다른 층을 비교합니다",
+    "lead": "원본과 별도 IFC를 함께 열고 차이를 설명합니다.",
+    "kind": "visual",
+    "rows": [],
+    "images": [
+      {
+        "path": "images/24-result.png",
+        "caption": "실제 Blender: 24층만 분리한 검토 화면"
+      }
+    ],
+    "links": [
+      {
+        "name": "24층 IFC·Blender 묶음",
+        "path": "materials/floors/A32-24/A32-24.zip"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "기존 전체 동 사진을 24층 실습의 성공 증거로 사용하지 않는다."
+  },
+  {
+    "part": "13 · 나머지 층 받기",
+    "time": "215–220분",
+    "title": "나머지 층은 완성된 개별 파일로 받습니다",
+    "lead": "B5부터 PHR까지 33개 층을 필요할 때 하나씩 엽니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "다운로드 단위",
+        "한 층의 IFC+Blender+미리보기+해시"
+      ],
+      [
+        "선택 검토",
+        "지하층·1층·PIT·옥상은 각각 다른 구성입니다."
+      ],
+      [
+        "수정 보관",
+        "원본 폴더를 보존하고 새 작업 IFC로 저장합니다."
+      ]
+    ],
+    "images": [],
+    "links": [
+      {
+        "name": "층별 다운로드 선택",
+        "path": "downloads.html#floors"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "전체 동 파일은 학생 자료에 없다. 필요한 층만 받아 진행한다. 선택한 파일의 정확한 버전과 원본 해시를 남긴다."
+  },
+  {
+    "part": "13 · 저장 방식",
+    "time": "215–220분",
+    "title": "IFC와 Blender 파일을 함께 전달합니다",
+    "lead": "두 파일은 같은 모델의 서로 다른 역할을 가집니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "IFC",
+        "객체·형상·속성·관계의 기준입니다. IFC로 열고 저장합니다."
+      ],
+      [
+        "Blender",
+        "해당 IFC를 불러온 표시 스냅샷입니다. 형상을 빠르게 살펴볼 때 사용합니다."
+      ],
+      [
+        "같은 폴더",
+        "이동 후 IFC 연결이 끊기면 같은 폴더의 IFC를 다시 엽니다."
+      ],
+      [
+        "화면 부하",
+        "필요한 층만 열고 확인한 뒤 다른 층으로 전환합니다."
+      ]
+    ],
+    "images": [
+      {
+        "path": "materials/units/25B/blender-screen.png",
+        "caption": "별도 Blender 창에서 실제로 연 25B 스냅샷 화면"
+      }
+    ],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "요청에 따라 .blend를 배포하되 BIM 원본과 역할을 구분한다. 층별 ZIP에 IFC와 Blender 파일이 함께 들어 있다."
+  },
+  {
+    "part": "14 · 면적산출 실습",
+    "time": "220–224분",
+    "title": "모델에서 읽은 값을 표로 만듭니다",
+    "lead": "유닛 1개와 층 1개만 사용합니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "25B",
+        "형상이 있는 IfcSpace 5개의 검토 면적을 읽습니다."
+      ],
+      [
+        "A32 5층",
+        "공간 형상이 없으므로 공간 면적은 공란으로 남깁니다."
+      ],
+      [
+        "슬래브",
+        "XY 투영 합집합을 별도 지표로 집계합니다."
+      ],
+      [
+        "Excel",
+        "파일·GUID·층·산식·기준·검토 상태를 함께 기록합니다."
+      ]
+    ],
+    "images": [],
+    "links": [
+      {
+        "name": "면적 실습 안내",
+        "path": "area-lab/README.md"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "IfcSpace 속성값과 실제 형상을 구분한다. 면적을 계산하는 데 전체 동 통합 모델을 열 필요는 없다."
+  },
+  {
+    "part": "14 · 면적산출 실습",
+    "time": "224–234분",
+    "title": "14A · IFC와 Blender에서 면적을 대조합니다",
+    "lead": "파일의 출처와 면적 기준이 남는 산출표를 만듭니다.",
+    "kind": "prompt",
+    "rows": [],
+    "images": [],
+    "links": [
+      {
+        "name": "면적 실습 ZIP",
+        "path": "area-lab.zip"
+      },
+      {
+        "name": "실습 도구 안내",
+        "path": "tools/README.md"
+      }
+    ],
+    "prompt": "면적 실습 ZIP을 내려받아 풀고 tools/README.md와 area-lab/README.md를 읽어줘.\nhttps://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/area-lab.zip\n별도 Python 환경에 tools/requirements.txt를 설치하고 tools/area_schedule.py를 같은 폴더의 area_extract.py와 함께 사용해줘.\n25B와 A32-05 IFC의 공간 면적·슬래브 XY 합집합을 분리해 CSV를 만들고, 그 근거로 Excel을 작성해줘. 형상 없는 공간은 미산출로 남겨줘.\n같은 IFC를 Bonsai로 열어 표의 GUID와 대조해줘. 법정 전용·공급면적으로 확정하지 마.",
+    "terms": [
+      [
+        "면적 기준",
+        "같은 합계에 넣을 수 있는 경계인지 구분합니다."
+      ],
+      [
+        "미산출",
+        "형상 없음을 면적 0으로 바꾸지 않습니다."
+      ]
+    ],
+    "checks": [
+      "출처 파일·GUID·층이 표에 있다.",
+      "공간과 슬래브 면적을 분리했다.",
+      "CSV·Excel과 화면의 선택 부재가 맞다."
+    ],
+    "repair": "14개 공간 면적이 전부 0으로 나와. IfcSpace의 Representation을 확인하고 없으면 미산출로 남긴 뒤 슬래브 지표를 별도로 계산해줘.",
+    "note": "면적 실습 ZIP에는 실행 진입점과 area_extract.py 엔진이 함께 있다. 설치 지연자는 예제 CSV/XLSX에서 GUID·기준·합계를 대조한다."
+  },
+  {
+    "part": "14 · 면적산출 실습",
+    "time": "234–237분",
+    "title": "숫자보다 먼저 면적 기준을 봅니다",
+    "lead": "25B 공간 합계와 슬래브 합계가 다른 이유를 설명합니다.",
+    "kind": "visual",
+    "rows": [
+      [
+        "25B",
+        "IfcSpace 형상 합계 23.725600㎡ / 슬래브 합집합 30.190800㎡"
+      ],
+      [
+        "A32 5층",
+        "일반 바닥 슬래브 합집합 994.531800㎡ / 공간 14개는 형상 없음"
+      ]
+    ],
+    "images": [
+      {
+        "path": "area-lab/area-preview.png",
+        "caption": "실제 IFC를 읽어 만든 면적 산출 실습 예제"
+      }
+    ],
+    "links": [],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "수치는 같은 입력 해시에서 생성한 예제다. 법정 면적·마감 내측 면적과 같다고 확정하지 않는다. 실제 면적표 검증은 별도 보고서를 참고한다."
+  },
+  {
+    "part": "15 · 마무리",
+    "time": "237–240분",
+    "title": "파일과 스킬, 산출표를 함께 남깁니다",
+    "lead": "다음 도면에 적용할 수 있는 작업 폴더가 오늘의 결과입니다.",
+    "kind": "explain",
+    "rows": [
+      [
+        "유닛",
+        "25B 수정 IFC와 54B 적용 결과"
+      ],
+      [
+        "스킬",
+        "직접 만든 unit-bim과 floor-bim"
+      ],
+      [
+        "층",
+        "기준층 수정본과 다른 층 시험본"
+      ],
+      [
+        "산출표",
+        "출처·GUID·면적 기준이 있는 CSV/Excel"
+      ]
+    ],
+    "images": [],
+    "links": [
+      {
+        "name": "모든 단계의 복사 요청문",
+        "path": "prompts.txt"
+      },
+      {
+        "name": "강사 운영 노트",
+        "path": "instructor-notes.md"
+      },
+      {
+        "name": "Git 공개 저장소",
+        "path": "https://github.com/yuxa94/bonsai-bim-workshop"
+      }
+    ],
+    "prompt": "",
+    "terms": [],
+    "checks": [],
+    "repair": "",
+    "note": "직접 실행한 범위와 제공 비교본을 구분한다. 설치·실행·수정·스킬·재사용·산출로 이어진 작업을 돌아본다."
+  }
+]

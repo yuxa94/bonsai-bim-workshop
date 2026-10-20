@@ -1,0 +1,66 @@
+{
+  "id": "84AB",
+  "label": "84AB 단위세대",
+  "group": "units",
+  "ifc": "materials/units/84AB/84AB.ifc",
+  "blend": "materials/units/84AB/84AB.blend",
+  "preview": "materials/units/84AB/preview.png",
+  "download": "materials/units/84AB/84AB.zip",
+  "readme": "materials/units/84AB/README.md",
+  "ifc_sha256": "3336c765f336f9c57ab0563710dfa5d455615c867a2c6dc3457870fdd6ff6f5f",
+  "ifc_bytes": 540945,
+  "source_ifc_sha256": "ef8946d2c2ca1aaa8e8a925284ed0ab0e2fec6a422f9dbe5e4e5f08b5763e2d9",
+  "byte_identical_to_source": false,
+  "metadata_sanitization": [
+    {
+      "property_value_replaced_with": "sources/84AB-v003.dwg"
+    },
+    {
+      "property_value_replaced_with": "provenance/image-map.json"
+    }
+  ],
+  "schema": "IFC4",
+  "product_count": 176,
+  "element_count": 157,
+  "represented_count": 156,
+  "void_feature_count": 17,
+  "storeys": 1,
+  "snapshot_role": "IFC 기반 표시 스냅샷. BIM의 기준 파일은 같은 폴더의 IFC.",
+  "preview_role": "해당 IFC를 Bonsai로 가져온 실제 메시의 평면·입체 투영. 화면 캡처나 원본 CAD가 아님.",
+  "family": "standalone",
+  "type": "84AB",
+  "revision": "84AB-v001",
+  "source_catalog": "assets/apartment-types/20261019-v1",
+  "limitations": "Review assumptions apply. Window profiles and some fixtures are approximate. Basin dimensions/placement differ from source by several centimetres.",
+  "source_review": "materials/units/84AB/source-review.png",
+  "source_review_role": "기존 검토용 Blender 렌더 이미지. 화면 캡처와 구분.",
+  "verification": {
+    "snapshot_reopened": true,
+    "loaded_representations": 156,
+    "mesh_objects": 156,
+    "missing_products": [],
+    "source_unchanged": true,
+    "staged_ifc_unchanged": true,
+    "relative_ifc_link": "84AB.ifc",
+    "blender": "4.4.0",
+    "bonsai": "0.9.0-post1-py311",
+    "bounds_m": [
+      [
+        -0.9990000128746033,
+        0.0,
+        -0.25
+      ],
+      [
+        8.34000015258789,
+        11.220000267028809,
+        2.799999952316284
+      ]
+    ],
+    "snapshot_reopened_after_ui_sanitization": true,
+    "ui_directory_sanitized": true,
+    "has_blend_warning_after_reopen": true
+  },
+  "blend_bytes": 376272,
+  "blend_sha256": "892204e7afe493fcc35045eee7548c0dc08e8f764b9c4e11b04e3b5b8e701df1",
+  "preview_bytes": 78815
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "file": "25B-reference.dxf",
+    "metadata_path_values_changed": 1,
+    "original_public_copy_sha256": "bc40c656bc316f06b6d0f4b63b41d44ee7d7588097491563dab538f12ac37b05",
+    "published_sha256": "cff91deb3033aea5270a4b173cb0f735c49a69539fe6ba93307b291d702baf1c"
+  },
+  {
+    "file": "54B-reference.dxf",
+    "metadata_path_values_changed": 1,
+    "original_public_copy_sha256": "515de0057cb7ec44db8961b48f7fde373046566e7bc1006ad38751b2284ccbac",
+    "published_sha256": "1dd16b006ae9c68b299ff4ad54154e6e47f26c95229085934d970ab62d083a45"
+  }
+]

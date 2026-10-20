@@ -1,0 +1,140 @@
+[
+  {
+    "path": "sources/25B-v003.dwg",
+    "sha256": "5e4a8b250fd51fa418a144cdc9b31cf1c0255d61b903e9b066ae3499ea0c9139",
+    "bytes": 236540,
+    "source": "source-reference.dwg"
+  },
+  {
+    "path": "sources/25B-reference.dxf",
+    "sha256": "cff91deb3033aea5270a4b173cb0f735c49a69539fe6ba93307b291d702baf1c",
+    "bytes": 1461931,
+    "source": "source-reference.dxf"
+  },
+  {
+    "path": "sources/54B-v003.dwg",
+    "sha256": "6014a631971f0fa2be9e864fdde2b7820ffbd910f5901b5b9cb0d66362ca0f8d",
+    "bytes": 232379,
+    "source": "source-reference.dwg"
+  },
+  {
+    "path": "sources/54B-reference.dxf",
+    "sha256": "1dd16b006ae9c68b299ff4ad54154e6e47f26c95229085934d970ab62d083a45",
+    "bytes": 1434777,
+    "source": "source-reference.dxf"
+  },
+  {
+    "path": "sources/A32-5-23F.dwg",
+    "sha256": "4b1c2d0df4367606cc0dc498946bb0e90dbb07af41267763663aa7898c5b8511",
+    "bytes": 2935720,
+    "source": "Preserved source.dwg from original Blender model task"
+  },
+  {
+    "path": "images/25B-input.png",
+    "sha256": "1d634cd12278f5756ed6316593feac49f6812620fcbf019b15d348df1eff0e31",
+    "bytes": 843590,
+    "source": "original-plan.png"
+  },
+  {
+    "path": "images/25B-result.png",
+    "sha256": "708733f5912a4acfaa4239ae931f6a397276d9cc2ac69838e861f238dac21b43",
+    "bytes": 2738110,
+    "source": "25B-v002-3d.png"
+  },
+  {
+    "path": "images/window-detail.png",
+    "sha256": "ddc1ea03b75a19c3c08b566e316fe8755f75c21c91433c2d10dea212d528f202",
+    "bytes": 2742232,
+    "source": "25B-v002-window.png"
+  },
+  {
+    "path": "images/shower-detail.png",
+    "sha256": "80b9cfc331fecc81edaf040c7ca243515912c58b83825b76a51a64cd66fa7adc",
+    "bytes": 2901189,
+    "source": "25B-v002-shower.png"
+  },
+  {
+    "path": "images/25B-overlay.png",
+    "sha256": "0b2e8d456ab823910809ba09b4b509f7fb922f429ac6a21f3d1a3cc398ef432b",
+    "bytes": 553508,
+    "source": "25B-ghost-3d.png"
+  },
+  {
+    "path": "images/54B-input.png",
+    "sha256": "d5a2e71962c652e98867609cf11a2a42123929e64ebaeb943b8a87bd2edb349a",
+    "bytes": 875577,
+    "source": "original-plan.png"
+  },
+  {
+    "path": "images/54B-result.png",
+    "sha256": "3b5afb098cc9ae04ac1ff80aa63ea5e3c1d4f48c31db8b450f18a4a26d08765f",
+    "bytes": 1972908,
+    "source": "54B-v002-3d.png"
+  },
+  {
+    "path": "images/05-input.png",
+    "sha256": "0db05739224bd76b26d662ce361c46ea6028bf0264f4ded884c4b475100f8ae9",
+    "bytes": 1308688,
+    "source": "original-plan.png"
+  },
+  {
+    "path": "images/05-overlay.png",
+    "sha256": "cbabdb995eab14fd6a472de05025e564b1fb242a40103f587c2548f059920314",
+    "bytes": 889609,
+    "source": "viewer-05-overlay.png"
+  },
+  {
+    "path": "images/stairs-input.png",
+    "sha256": "22086eec8e2e35521286e0d7e19e35ff1eaa258a11de367c64bab75d016c84ee",
+    "bytes": 170638,
+    "source": "stairs-source.png"
+  },
+  {
+    "path": "images/stairs-result.png",
+    "sha256": "588863f293ba1c92a8e31cee0771108694212cecf17bbf8869967ac7036703bc",
+    "bytes": 570014,
+    "source": "review-stairs.png"
+  },
+  {
+    "path": "images/floor-correction.png",
+    "sha256": "0af537b5e480815d9937863774c3cc4ada65a7b7cdde1d957ad50aa897197bca",
+    "bytes": 942005,
+    "source": "review-overview.png"
+  },
+  {
+    "path": "images/24-input.png",
+    "sha256": "b96998d163fe181de35f93b6d01f0fe268343e8971a661f2525288f9a457a483",
+    "bytes": 899029,
+    "source": "original-plan.png"
+  },
+  {
+    "path": "images/24-result.png",
+    "sha256": "76262a878c7d6b4819808ae50a180c4f510032efe1b5bd86aa7b926a37c09187",
+    "bytes": 1113256,
+    "source": "viewer-24-isolate.png"
+  },
+  {
+    "path": "images/01-canopy.png",
+    "sha256": "5130f2e9af56e0c9b5718f45338bee7bcd2c8d96a63a1957fa415ede080d5181",
+    "bytes": 1021085,
+    "source": "canopy-original-plan-overlay.png"
+  },
+  {
+    "path": "sources/A32-all-plans.dwg",
+    "sha256": "c332846095c0d43db7ae5b01438281c6e01f2558cf62398901bd8d0d3eb6498a",
+    "bytes": 3582628,
+    "source": "A32-001~015 동평면도.DWG"
+  },
+  {
+    "path": "sources/A32-sections.dwg",
+    "sha256": "7ce5d0ab401b4e1b92dcd13c3a9a770f77d29a8107fd0c3aa2abda22daf4c058",
+    "bytes": 268384,
+    "source": "A32-031~032 동단면도.dwg"
+  },
+  {
+    "path": "sources/A32-elevations.dwg",
+    "sha256": "8c93fc5f789cf062d6ff87be5b37190d93ed7814429251dc38654f80084ba0b3",
+    "bytes": 263296,
+    "source": "A32-021~022 동입면도.dwg"
+  }
+]

@@ -1,0 +1,10 @@
+test_missing_space_representation_is_missing_not_zero (test_area_extract.AreaLabTests.test_missing_space_representation_is_missing_not_zero) ... ok
+test_profiles_match_independent_previous_floor_control (test_area_extract.AreaLabTests.test_profiles_match_independent_previous_floor_control) ... ok
+test_same_input_rejected_prevents_duplicate_occurrences (test_area_extract.AreaLabTests.test_same_input_rejected_prevents_duplicate_occurrences) ... ok
+test_two_real_examples_and_source_readonly (test_area_extract.AreaLabTests.test_two_real_examples_and_source_readonly) ... ok
+test_unsupported_geometry_fails_explicitly (test_area_extract.AreaLabTests.test_unsupported_geometry_fails_explicitly) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.913s
+
+OK
