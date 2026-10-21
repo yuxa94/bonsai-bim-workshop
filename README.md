@@ -3,7 +3,7 @@
 Blender 다운로드 완료 상태에서 MCP 연결, Bonsai·IfcOpenShell 설치 확인,25B 생성·상세 수정, 스킬 작성과54B 적용, A32 기준층·다른 층, 면적산출표까지 이어지는240분 과정입니다. 휴식20분을 포함합니다.
 
 - [강의 열기](https://yuxa94.github.io/bonsai-bim-workshop/)
-- [첫 페이지: Codex에 Bonsai·IfcOpenShell 설치 맡기기](https://yuxa94.github.io/bonsai-bim-workshop/#1)
+- [표지 다음 2페이지: Codex에 Bonsai·IfcOpenShell 설치 맡기기](https://yuxa94.github.io/bonsai-bim-workshop/#2)
 - [자료실](https://yuxa94.github.io/bonsai-bim-workshop/downloads.html)
 - [설치 안내](guides/01-connect-and-install.md)
 - [단계별 요청문](prompts.txt)

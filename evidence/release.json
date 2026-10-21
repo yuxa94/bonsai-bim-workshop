@@ -7,7 +7,7 @@
   "floor_models": 33,
   "ifc_blend_pairs_verified": 51,
   "max_file_bytes": 16807822,
-  "payload_bytes": 407831460,
+  "payload_bytes": 407832355,
   "asset_hashes_checked": 51,
   "missing_links": [],
   "private_path_scan_files": [],
@@ -16,8 +16,8 @@
   "source_thread": "Blender에서 3D 모델 만들기",
   "source_floor_dwg_sha256": "4b1c2d0df4367606cc0dc498946bb0e90dbb07af41267763663aa7898c5b8511",
   "area_tests": 5,
-  "browser_ui": "Prior release UI verified. New installation page uses the existing copy template. Post-publication browser check is recorded separately in the project training log.",
-  "pdf_pages_reviewed": "49 pages: previous 48 content reviewed in prior releases, new page 1 rendered and visually reviewed",
+  "browser_ui": "Prior release UI verified. Installation request follows the cover. Post-publication browser check is recorded separately in the project training log.",
+  "pdf_pages_reviewed": "49 pages: previous content reviewed in prior releases; restored cover page 1 and installation page 2 rendered and visually reviewed",
   "limitations": [
     "Blender snapshots are for display; adjacent IFC is authoritative",
     "Student setup and LLM modelling time varies",
@@ -25,6 +25,7 @@
   ],
   "viewer_native_tests": 2,
   "viewer_ifc_unchanged": true,
-  "installation_prompt_first_page": true,
+  "installation_prompt_first_page": false,
+  "installation_prompt_page": 2,
   "fresh_pc_installation_executed": false
 }

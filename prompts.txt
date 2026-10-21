@@ -1,4 +1,4 @@
-1. 00 · 먼저 복사하세요 · Bonsai·IfcOpenShell 설치를 맡깁니다
+2. 00 · 먼저 복사하세요 · Bonsai·IfcOpenShell 설치를 맡깁니다
 Blender는 다운로드했어. 이 Windows PC에 Bonsai와 IfcOpenShell을 실제 설치하고 확인해줘.
 설치 안내: https://raw.githubusercontent.com/yuxa94/bonsai-bim-workshop/main/guides/01-connect-and-install.md
 Blender 실행 파일·버전·내부 Python·기존 설치를 확인하고 공식 배포처의 호환 Bonsai 안정판을 설치·활성화해줘. 정상 설치와 기존 모델·다른 창은 보존해줘.
